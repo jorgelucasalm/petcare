@@ -35,20 +35,6 @@ export const Container = styled.div`
         padding: 1rem;
     }
 
-    @media (min-width: 700px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        height: 100%;    }
-
-    .blue-section {
-        width: 50vw;
-    }
-    
-    .white-section {
-        width: 50vw;        
-    }
-}
 `; 
 
 export const BlueSection = styled.div`
@@ -56,10 +42,11 @@ export const BlueSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50vw;
+    padding: 6rem 0rem;
 
     background: linear-gradient(180deg, #DBF1F4 0%, #BDD8DC 100%);;
     height: 100%;
-    width: 100%;
 `;
 
 export const WhiteSection = styled.div `
@@ -67,9 +54,8 @@ export const WhiteSection = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    width: 100%;
-    padding: 4rem 0rem 8rem;
+    width: 50vw;
+    padding: 6rem 0rem;
 
     div {
         display: flex;

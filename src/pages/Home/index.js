@@ -4,13 +4,12 @@ import Input from "../../components/Input";
 
 import {
   Navbar,
-  Container, 
+  Container,
   BlueSection, 
   WhiteSection,
   TextBox, 
   Footer
 } from "../Home/style"
-
 
 function Home() {
   return (
@@ -47,4 +46,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Home();
