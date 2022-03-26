@@ -1,7 +1,9 @@
 import { Button } from "./style";
 
 function SecundaryButton () {
-    <Button></Button>
+    return (
+        <Button>Teste</Button>
+    )
 }
 
 export default SecundaryButton;

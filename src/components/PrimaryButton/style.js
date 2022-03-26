@@ -1,15 +1,16 @@
 import styled from "styled-components"
 
 const Button = styled.button`
-    font-family: Arial;
     font-size: 0.8rem;
     font-weight: 600;
-    text-decoration: none;
     color: #ffffff;
-    padding: .8rem 5rem;
+    text-decoration: none;
+    width: 220px;
+    padding: .8rem; 
+    margin: .5rem 1rem;
+    border: none;
     border-radius: 30px;
     transition: all 0.3s ease-out;
-    border: none;
     background-color: ${(props) => {
         switch (props.color) {
             case 'dog':
