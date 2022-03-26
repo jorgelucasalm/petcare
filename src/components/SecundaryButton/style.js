@@ -6,9 +6,11 @@ export const Button = styled.button `
     font-size: 0.8rem;
     font-weight: 600;
     color: #074B55;
+    background: none;
     text-decoration: none;
     text-align: center;
     line-height: 2rem;
+    border: none;
     border-bottom: 2px solid #074B55; 
     transition: all 0.3s ease-out;
 

@@ -1,3 +1,5 @@
+//import Logo from "../../assets/img/logo-petcare.png" 
+// import Cat from "../../assets/img/welcome.png"
 import PrimaryButton from "../../components/PrimaryButton";
 import SecundaryButton from "../../components/SecundaryButton";
 import Input from "../../components/Input";
@@ -9,7 +11,7 @@ import {
   WhiteSection,
   TextBox, 
   Footer
-} from "../Home/style"
+} from "./style"
 
 function Home() {
   return (
@@ -19,8 +21,8 @@ function Home() {
 
         <BlueSection>
           <p>Bem vindo ao</p>
-          <img />
-          <img />
+          <img/>
+          <img/>
         </BlueSection>
 
         <WhiteSection>
@@ -28,8 +30,8 @@ function Home() {
           <p>ou</p>
 
           <TextBox>
-            <Input ></Input>
-            <Input ></Input>
+            <Input placeholder={"user"}/>
+            <Input />
 
             <a>Esqueci a senha</a>
           </TextBox>
@@ -46,4 +48,4 @@ function Home() {
   );
 }
 
-export default Home();
+export default Home;

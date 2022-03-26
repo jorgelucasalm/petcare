@@ -1,8 +1,13 @@
 import styled from "styled-components"
 
 export const Navbar = styled.nav `
+    display: none;
     height: 4rem;
     background-color: #BED9DD;
+
+    @media (min-width: 700px) {
+        display: block;
+    }
 `;
 
 export const Container = styled.div`
@@ -35,6 +40,12 @@ export const Container = styled.div`
         padding: 1rem;
     }
 
+    @media (min-width: 700px) {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+
 `; 
 
 export const BlueSection = styled.div`
@@ -42,11 +53,15 @@ export const BlueSection = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 100%;
+    
     padding: 6rem 0rem;
-
     background: linear-gradient(180deg, #DBF1F4 0%, #BDD8DC 100%);;
     height: 100%;
+
+    @media (min-width: 700px) {
+        width: 50vw;   
+    }
 `;
 
 export const WhiteSection = styled.div `
@@ -54,7 +69,7 @@ export const WhiteSection = styled.div `
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
+    width: 100%;
     padding: 6rem 0rem;
 
     div {
@@ -63,22 +78,43 @@ export const WhiteSection = styled.div `
         align-items: center;
         padding: 1.5rem;
     }
+
+    @media (min-width: 700px) {
+        width: 50vw;   
+    }
 `;
 
 export const TextBox = styled.div `
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem; 
+    width: fit-content;
 `;
 
 export const Footer = styled.footer `
+    position: fixed;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 100%;
     height: 2rem;
-    background-color: #074B55;
     color: #ffffff;
     font-size: .9rem;
+
+    background-color: ${(props) => {
+        switch (props.color) {
+            case 'dog':
+                return '#6DBF8E'
+            
+            case 'cat':
+                return '#9960AE'
+
+            default:
+                return '#074B55'
+        }
+    }};
 `;
 
 

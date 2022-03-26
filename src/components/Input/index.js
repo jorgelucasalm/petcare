@@ -1,7 +1,10 @@
 import PrimaryInput from "./style"
 
 function Input () {
-    <PrimaryInput />
+    return (
+        <PrimaryInput />
+    )
+
 }
 
 export default Input;
