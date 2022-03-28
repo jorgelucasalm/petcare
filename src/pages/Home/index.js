@@ -34,7 +34,7 @@ function Home() {
             <Input placeholder = "user"/>
             <Input />
 
-            <a>Esqueci a senha</a>
+            <a href="#">Esqueci a senha</a>
           </TextBox>
 
           <Buttons>
