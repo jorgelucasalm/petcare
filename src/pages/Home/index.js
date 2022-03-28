@@ -9,7 +9,8 @@ import {
   Container,
   BlueSection, 
   WhiteSection,
-  TextBox, 
+  TextBox,
+  Buttons, 
   Footer
 } from "./style"
 
@@ -30,16 +31,16 @@ function Home() {
           <p>ou</p>
 
           <TextBox>
-            <Input placeholder={"user"}/>
+            <Input placeholder = "user"/>
             <Input />
 
             <a>Esqueci a senha</a>
           </TextBox>
 
-          <div>
+          <Buttons>
             <PrimaryButton>Entrar</PrimaryButton>
             <SecundaryButton>Criar conta</SecundaryButton>
-          </div>
+          </Buttons>
         </WhiteSection>
       </Container>
 
