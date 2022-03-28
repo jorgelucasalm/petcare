@@ -72,22 +72,22 @@ export const WhiteSection = styled.div `
     width: 100%;
     padding: 6rem 0rem;
 
-    div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1.5rem;
-    }
-
     @media (min-width: 700px) {
         width: 50vw;   
     }
 `;
 
+export const Buttons = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+`;
+
 export const TextBox = styled.div `
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    //align-items: flex-end; tá gerando um bug no alinhamento da div
     padding: 1rem; 
     width: fit-content;
 `;
