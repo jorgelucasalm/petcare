@@ -7,14 +7,14 @@ import Input from "../../components/Input";
 import {
   Navbar,
   Container,
-  BlueSection, 
+  BlueSection,
   WhiteSection,
   TextBox,
-  Buttons, 
+  Buttons,
   Footer
 } from "./style"
 
-function Home() {
+function Login() {
   return (
     <>
       <Navbar></Navbar>
@@ -22,8 +22,8 @@ function Home() {
 
         <BlueSection>
           <p>Bem vindo ao</p>
-          <img/>
-          <img/>
+          <img />
+          <img />
         </BlueSection>
 
         <WhiteSection>
@@ -31,7 +31,7 @@ function Home() {
           <p>ou</p>
 
           <TextBox>
-            <Input placeholder = "user"/>
+            <Input placeholder="user" />
             <Input />
 
             <a href="#">Esqueci a senha</a>
@@ -49,4 +49,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Login;
