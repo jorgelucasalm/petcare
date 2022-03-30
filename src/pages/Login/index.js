@@ -1,5 +1,5 @@
-//import Logo from "../../assets/img/logo-petcare.png" 
-// import Cat from "../../assets/img/welcome.png"
+import Logo from "../../assets/img/logo-petcare.png" 
+import Cat from "../../assets/img/welcome-cat.png"
 import PrimaryButton from "../../components/PrimaryButton";
 import SecundaryButton from "../../components/SecundaryButton";
 import Input from "../../components/Input";
@@ -22,8 +22,8 @@ function Login() {
 
         <BlueSection>
           <p>Bem vindo ao</p>
-          <img />
-          <img />
+          <img src={ Logo } alt="logo-petcare"/>
+          <img src={ Cat } alt="mascote-felino"/>
         </BlueSection>
 
         <WhiteSection>
