@@ -25,7 +25,6 @@ export const Container = styled.div`
 
     img {
         display: flex;
-        padding: 2rem 0rem;
         width: 80%;
         max-width: 19rem;
         min-width: 15rem;
@@ -61,6 +60,7 @@ export const BlueSection = styled.div`
 
     @media (min-width: 700px) {
         width: 50vw;   
+        height: 100vh;
     }
 `;
 
@@ -74,6 +74,7 @@ export const WhiteSection = styled.div `
 
     @media (min-width: 700px) {
         width: 50vw;   
+        height: 100vh;
     }
 `;
 

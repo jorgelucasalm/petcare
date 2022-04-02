@@ -3,16 +3,9 @@ import Cat from "../../assets/img/welcome-cat.png"
 import PrimaryButton from "../../components/PrimaryButton";
 import SecundaryButton from "../../components/SecundaryButton";
 import Input from "../../components/Input";
+import Footer from "../../components/Footer";
 
-import {
-  Navbar,
-  Container,
-  BlueSection,
-  WhiteSection,
-  TextBox,
-  Buttons,
-  Footer
-} from "./style"
+import { Navbar, Container, BlueSection, WhiteSection, TextBox, Buttons } from "./style"
 
 function Login() {
   return (
@@ -44,7 +37,7 @@ function Login() {
         </WhiteSection>
       </Container>
 
-      <Footer>&copy; Coc</Footer>
+      <Footer />
     </>
   );
 }

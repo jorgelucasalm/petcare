@@ -4,13 +4,14 @@ import Dog from "../../assets/img/welcome-dog.png"
 import Input from "../../components/Input";
 import PrimaryButton from "../../components/PrimaryButton";
 import SecundaryButton from "../../components/SecundaryButton";
-import { BlueSection, Buttons, TextBox, WhiteSection } from "../Login/style";
+import Footer from "../../components/Footer";
+import { Container, Navbar, BlueSection, Buttons, TextBox, WhiteSection } from "./style";
 
 function Responsavel (){
     return (
         <>
+            <Navbar></Navbar>
             <Container>
-                <Navbar />
                 <WhiteSection>
                     <header>
                         <h2>Cadastro</h2>
@@ -37,6 +38,7 @@ function Responsavel (){
                     <img src={ Dog } alt="mascote-canino"/>
                 </BlueSection>
             </Container>
+            <Footer />
         </>
     )
 }
