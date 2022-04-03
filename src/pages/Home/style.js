@@ -10,7 +10,7 @@ export const Hub = styled.section`
 
   @media (max-width: 700px) {
     width: 100%;
-    padding: 0 1rem;
+    padding: 1.5rem 1rem;
   }
 `;
 

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   cursor: pointer;
-
+  background-color: #F9FCF3;
   display: flex;
   flex-direction: column;
   align-items: center;

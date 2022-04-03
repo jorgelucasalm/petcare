@@ -16,7 +16,6 @@ import TopSection from "./components/Top-section"
 function Home() {
   return (
     <Container>
-      <Navbar />
 
       <TopSection image={Dog} />
       <Hub>

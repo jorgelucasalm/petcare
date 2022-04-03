@@ -7,9 +7,8 @@ const TopSection = ({ tittle, image }) => {
     <Container>
       <img src={image} alt="" />
       <div>
-        <h1>Olá, Gerônimo!</h1>
-        <span>Como está a minerva?</span>
-
+        <h1>Olá, <span>Gerônimo!</span></h1>
+        <h2>Como está a <span>Marley?</span></h2>
       </div>
     </Container>
   );

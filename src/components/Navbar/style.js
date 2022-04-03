@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.nav`
-  display: none;
+  /* display: none; */
   height: 4rem;
   background-color: #bed9dd;
   box-shadow: 0 5px 10px -2px #b2b2b2;
@@ -12,7 +12,7 @@ export const Container = styled.nav`
   }
 
   nav {
-    max-width: 1440px;
+    max-width: 700px;
     margin: 0 auto;
     height: 4rem;
     display: flex;
