@@ -11,13 +11,14 @@ import Vacina from "../../assets/img/icon-vacina.png"
 import Navbar from '../../components/Navbar'
 import Card from './components/Card';
 import { Hub, Container } from './style'
+import TopSection from "./components/Top-section"
 
 function Home() {
   return (
     <Container>
       <Navbar />
-      <img src={Dog} alt="" />
-      <h1>Olá, <span className="bold">Marlena!</span></h1>
+
+      <TopSection image={Dog} />
       <Hub>
         <Card tittle={"Agendar"} image={Agendar}></Card>
         <Card tittle={"Requisições"} image={Requisicao}></Card>
