@@ -12,8 +12,13 @@ import Navbar from '../../components/Navbar'
 import Card from './components/Card';
 import { Hub, Container } from './style'
 import TopSection from "./components/Top-section"
+import Footer from './components/Footer'
+
+import { useState, ref } from 'react'
 
 function Home() {
+  const [count, setCount] = useState(0);
+
   return (
     <Container>
 
@@ -27,6 +32,7 @@ function Home() {
         <Card tittle={"FAQ"} image={Faq}></Card>
       </Hub>
 
+      <Footer></Footer>
     </Container>
   );
 }

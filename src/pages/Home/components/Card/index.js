@@ -8,7 +8,7 @@ const Card = ({ tittle, image }) => {
       <div>
         <img src={image} alt="" />
       </div>
-      <h1>{tittle}</h1>
+      <h3>{tittle}</h3>
     </Container>
   );
 }
