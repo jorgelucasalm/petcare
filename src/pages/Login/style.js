@@ -42,7 +42,7 @@ export const Container = styled.div`
     @media (min-width: 700px) {
         display: flex;
         flex-direction: row;
-        height: 100%;
+        height: 90vh;
     }
 
 `; 
@@ -54,13 +54,13 @@ export const BlueSection = styled.div`
     justify-content: center;
     width: 100%;
     
-    padding: 6rem 0rem;
+    //padding: 6rem 0rem;
     background: linear-gradient(180deg, #DBF1F4 0%, #BDD8DC 100%);;
     height: 100%;
 
     @media (min-width: 700px) {
         width: 50vw;   
-        height: 100vh;
+        height: 100%;
     }
 `;
 
@@ -70,11 +70,11 @@ export const WhiteSection = styled.div `
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 6rem 0rem;
+    //padding: 6rem 0rem;
 
     @media (min-width: 700px) {
         width: 50vw;   
-        height: 100vh;
+        height: 100%;
     }
 `;
 
