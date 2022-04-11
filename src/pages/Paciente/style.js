@@ -1,0 +1,84 @@
+import styled from "styled-components";
+
+export const Container = styled.body `
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3c3c3c;
+    padding: 0rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    height: 100vh;
+
+`;
+
+export const Card = styled.div`
+    width: 100%;
+    min-width: 323px;
+    max-width: 600px;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: .5rem;
+    gap: 1rem;
+
+    padding: 3rem 0rem;
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2 {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    img {
+        display: flex;
+        width: 80%;
+        max-width: 19rem;
+        min-width: 15rem;
+    }
+    a {
+        text-decoration: none;
+        font-size: 0.7rem;
+        display: flex;
+        color: #074B55;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    @media (min-width: 700px) {
+        display: flex;
+        height: 90vh;
+    }
+`;
+
+export const TextBox = styled.div `
+    display: flex;
+    flex-direction: column;
+    padding: 1rem; 
+    width: fit-content;
+`;
+
+export const Buttons = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+`;

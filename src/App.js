@@ -1,8 +1,10 @@
 import Login from "./pages/Login";
+import Paciente from "./pages/Paciente";
 
 function App() {
   return (
-    <Login />
+    //<Login />
+    <Paciente />
   );
 }
 
