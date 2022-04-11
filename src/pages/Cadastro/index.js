@@ -7,7 +7,7 @@ import SecundaryButton from "../../components/SecundaryButton";
 import Footer from "../../components/Footer";
 import { Container, Navbar, BlueSection, Buttons, TextBox, WhiteSection } from "./style";
 
-function Responsavel (){
+function Cadastro (){
     return (
         <>
             <Navbar></Navbar>
@@ -43,4 +43,4 @@ function Responsavel (){
     )
 }
 
-export default Responsavel;
+export default Cadastro;

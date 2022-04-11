@@ -1,10 +1,10 @@
 import Login from "./pages/Login";
-import Responsavel from "./pages/Responsável";
+import Cadastro from "./pages/Cadastro";
 
 function App() {
   return (
-    <Login />
-    //<Responsavel /> 
+    //<Login />
+    <Cadastro /> 
   );
 }
 
