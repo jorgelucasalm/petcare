@@ -17,12 +17,12 @@ function Modal({ showModal, closeModal }) {
             </header>
 
             <TextBox>
-              <Input placeholder={'dale'} />
-              <Input />
-              <Input />
-              <Input />
-              <Input />
-              <Input />
+              <Input placeholder={'*Nome:'} />
+              <Input placeholder={'*Raça:'} />
+              <Input placeholder={'*Peso:'} />
+              <Input placeholder={'*Idade:'} />
+              <Input placeholder={'Tipo Sangúineo:'}/>
+              <Input placeholder={'Lorem Ipsum:'} />
             </TextBox>
 
             <Buttons>
