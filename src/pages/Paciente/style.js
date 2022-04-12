@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     position: fixed;
 
     display: flex;
@@ -72,7 +72,7 @@ export const Card = styled.div`
     }
 `;
 
-export const TextBox = styled.div `
+export const TextBox = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1rem; 

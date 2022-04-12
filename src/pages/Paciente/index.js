@@ -4,80 +4,16 @@ import Modal from './components/Modal';
 function Paciente() {
   const [showModal, setShowModal] = useState(false);
 
+  const closeModal = (e) => {
+    if (e.classList.contains('modal')) {
+      setShowModal(false);
+    }
+  }
 
   return (
     <>
-      <h1 onClick={ e => {setShowModal(true) }}>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-      <h1>BATATA</h1>
-
-      <Modal showModal={showModal} setShowModal={setShowModal}/>
+      <h1 onClick={e => { setShowModal(true) }}>Open Modal</h1>
+      <Modal showModal={showModal} closeModal={closeModal} />
     </>
   );
 }

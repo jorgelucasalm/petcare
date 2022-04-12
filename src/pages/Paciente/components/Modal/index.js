@@ -1,13 +1,14 @@
+import { useEffect } from 'react';
 import Input from '../../../../components/Input/style';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
 import { Container, Card, TextBox, Buttons } from './style';
 
-function Modal(props) {
+function Modal({ showModal, closeModal }) {
   return (
     <>
-      {props.showModal ? (
-        <Container onClick={props.setShowModal(false)}>
+      {showModal ? (
+        <Container className="modal" onClick={e => { closeModal(e.target) }}>
           <Card>
             <header>
               <h2>Cadastro</h2>
