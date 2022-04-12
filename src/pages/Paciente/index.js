@@ -1,35 +1,84 @@
-import Input from "../../components/Input/style";
-import PrimaryButton from "../../components/PrimaryButton";
-import SecundaryButton from "../../components/SecundaryButton";
-import { Container, Card, TextBox, Buttons } from "./style";
+import { useState } from 'react';
+import Modal from './components/Modal';
 
-function Paciente () {
-    return (
-        <Container>
-            <Card>
-                <header>
-                    <h2>Cadastro</h2>
-                    <p>Paciente</p>
+function Paciente() {
+  const [showModal, setShowModal] = useState(false);
 
-                    <img />
-                </header>
 
-                <TextBox>
-                    <Input />
-                    <Input />
-                    <Input />
-                    <Input />
-                    <Input />
-                    <Input />
-                </TextBox>
+  return (
+    <>
+      <h1 onClick={ e => {setShowModal(true) }}>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
+      <h1>BATATA</h1>
 
-                <Buttons>
-                    <PrimaryButton>Próximo</PrimaryButton>
-                    <SecundaryButton>Já tenho conta</SecundaryButton>
-                </Buttons>
-            </Card>
-        </Container>
-    )
-} 
-
+      <Modal showModal={showModal} setShowModal={setShowModal}/>
+    </>
+  );
+}
 export default Paciente;

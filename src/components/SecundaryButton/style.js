@@ -15,7 +15,7 @@ export const Button = styled.button `
     transition: all 0.3s ease-out;
 
     &:hover {
-        color: #1DA6BA;
+        color: #1DA6BA; //PROPS DE COR
         border-bottom: 2px solid #1DA6BA; 
         transition: all 0.3s ease-out;
     }
