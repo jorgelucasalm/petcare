@@ -19,11 +19,11 @@ function Cadastro() {
           </header>
 
           <div>
-            <Input placeholder={''} />
-            <Input />
-            <Input />
-            <Input />
-            <Input />
+            <Input placeholder={'*Nome:'} />
+            <Input placeholder={'*CPF:'} />
+            <Input placeholder={'*Endereço:'} />
+            <Input placeholder={'*Telefone:'} />
+            <Input placeholder={'*E-mail:'} />
           </div>
 
           <Buttons>
