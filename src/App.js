@@ -1,10 +1,10 @@
 import Login from "./pages/Login";
-import Paciente from "./pages/Paciente";
+import Species from "./pages/Species";
 
 function App() {
   return (
     //<Login />
-    <Paciente />
+    <Species />
   );
 }
 

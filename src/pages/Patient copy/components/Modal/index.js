@@ -27,7 +27,7 @@ function Modal({ showModal, closeModal }) {
 
             <Buttons>
               <PrimaryButton>Próximo</PrimaryButton>
-              <SecundaryButton>Já tenho conta</SecundaryButton>
+              <SecundaryButton>Voltar</SecundaryButton>
             </Buttons>
           </Card>
         </Container>

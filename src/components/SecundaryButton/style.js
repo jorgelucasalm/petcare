@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Button = styled.button `
     width: 10rem;
-    font-family: Arial; /*Trocar de fonte*/
     font-size: 0.8rem;
     font-weight: 600;
     color: #074B55;
