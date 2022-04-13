@@ -13,13 +13,13 @@ export const Container = styled.div`
   }
 
   h1 {
-    color: #6dbf8e;
-      font-size: 1.25rem;
+    color: ${(props) => props.theme.colors.primary};
+    font-size: 1.25rem;
   }
 
   h2 {
     color: #535353;
-      font-size: 0.875rem;
+    font-size: 0.875rem;
   }
 
   span {

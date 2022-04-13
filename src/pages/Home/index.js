@@ -1,28 +1,21 @@
-import Logo from "../../assets/img/logo-petcare.png"
-import Dog from "../../assets/img/icon-home-dog.png"
-
+import { useContext, useState } from 'react'
 import Agendar from "../../assets/img/icon-agendar.png"
 import Config from "../../assets/img/icon-config.png"
 import Exame from "../../assets/img/icon-exames.png"
 import Faq from "../../assets/img/icon-faq.png"
 import Requisicao from "../../assets/img/icon-requisicao.png"
 import Vacina from "../../assets/img/icon-vacina.png"
-
-import Navbar from '../../components/Navbar'
-import Card from './components/Card';
-import { Hub, Container } from './style'
-import TopSection from "./components/Top-section"
+import Card from './components/Card'
 import Footer from './components/Footer'
-
-import { useState, ref } from 'react'
+import TopSection from "./components/Top-section"
+import { Container, Hub } from './style'
+import { ThemeContext } from 'styled-components'
 
 function Home() {
-  const [count, setCount] = useState(0);
-
+  const { images } = useContext(ThemeContext)
   return (
     <Container>
-
-      <TopSection image={Dog} />
+      <TopSection image={images.pet} />
       <Hub>
         <Card tittle={"Agendar"} image={Agendar}></Card>
         <Card tittle={"Requisições"} image={Requisicao}></Card>
