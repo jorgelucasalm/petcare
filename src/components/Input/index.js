@@ -1,8 +1,8 @@
 import PrimaryInput from "./style"
 
-function Input () {
+function Input ({placeholder}) {
     return (
-        <PrimaryInput />
+        <PrimaryInput placeholder={placeholder}/>
     )
 }
 
