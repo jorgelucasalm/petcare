@@ -26,7 +26,7 @@ function Modal({ showModal, closeModal }) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton>Próximo</PrimaryButton>
+              <PrimaryButton color="cat">Próximo</PrimaryButton>
               <SecundaryButton>Voltar</SecundaryButton>
             </Buttons>
           </Card>

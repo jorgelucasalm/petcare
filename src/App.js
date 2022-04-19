@@ -1,10 +1,10 @@
 import Login from "./pages/Login";
-import Access from "./pages/Access";
+import Confirmation from "./pages/Confirmation";
 
 function App() {
   return (
     //<Login />
-    <Access />
+    <Confirmation />
   );
 }
 

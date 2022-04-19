@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     position: fixed;
 
     display: flex;
@@ -8,7 +8,7 @@ export const Container = styled.div `
     align-items: center;
     justify-content: center;
 
-    background-color: #3c3c3c99;
+    background-color: #3c3c3c;
     padding: 0rem;
     margin: 0;
 
@@ -19,6 +19,7 @@ export const Card = styled.div`
     position: sticky;
     z-index: 9999;
     top: 20;
+
 
     width: 100%;
     min-width: 323px;
@@ -71,7 +72,7 @@ export const Card = styled.div`
     }
 `;
 
-export const TextBox = styled.div `
+export const TextBox = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1rem; 
