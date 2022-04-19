@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from './components/Modal';
 
-function Paciente() {
+function Access() {
   const [showModal, setShowModal] = useState(false);
 
   const closeModal = (e) => {
@@ -17,4 +17,4 @@ function Paciente() {
     </>
   );
 }
-export default Paciente;
+export default Access;

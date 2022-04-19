@@ -1,10 +1,10 @@
 import Login from "./pages/Login";
-import Species from "./pages/Species";
+import Access from "./pages/Access";
 
 function App() {
   return (
     //<Login />
-    <Species />
+    <Access />
   );
 }
 
