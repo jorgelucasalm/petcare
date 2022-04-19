@@ -23,6 +23,7 @@ function Cadastro() {
 
   return (
     <>
+      <h1 onClick={e => { setShowModal(true) }}>Open Modal</h1>
       <Navbar></Navbar>
       <Container>
         <WhiteSection>
@@ -41,7 +42,7 @@ function Cadastro() {
 
           <Buttons>
             <PrimaryButton>Próximo</PrimaryButton>
-            <SecundaryButton onClick={e => { setShowModal(true) }} >Já tenho conta</SecundaryButton>
+            <SecundaryButton>Já tenho conta</SecundaryButton>
           </Buttons>
         </WhiteSection>
 
