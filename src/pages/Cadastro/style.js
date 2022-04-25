@@ -63,7 +63,7 @@ export const BlueSection = styled.div`
   }
 `;
 
-export const WhiteSection = styled.div`
+export const WhiteSection = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,6 +96,58 @@ export const WhiteSection = styled.div`
     //align-items: flex-end; tá gerando um bug no alinhamento da div
     padding: 1rem;
     width: fit-content;
+  }
+
+  div input {
+    height: 2rem;
+    font-weight: 550;
+    margin: .5rem 1rem;
+    width: 95%;
+    max-width: 20rem;
+    min-width: 15rem;
+    border: none;
+    border-bottom: 2px solid #BED9DD; 
+    outline: none; 
+  }
+
+  div + div input {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    width: 220px;
+    padding: .8rem; 
+    margin: .5rem 1rem;
+    border: none;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+    background-color: ${(props) => {
+    switch (props.color) {
+      case 'dog':
+        return '#6DBF8E'
+
+      case 'cat':
+        return '#9960AE'
+
+      default:
+        return '#074B55'
+    }
+  }};
+
+    &:hover {
+        background: ${(props) => {
+    switch (props.color) {
+      case 'dog':
+        return 'linear-gradient(180deg, #D0E6A5 0%, #DDEDBD 100%);'
+
+      case 'cat':
+        return 'linear-gradient(180deg, #CCABD8 0%, #DBC4E3 100%);'
+
+      default:
+        return '#1DA6BA'
+    }
+  }};
+    }
   }
 `;
 

@@ -9,11 +9,15 @@ import SecundaryButton from '../../components/SecundaryButton';
 import Footer from '../../components/Footer';
 import { Container, Navbar, BlueSection, Buttons, WhiteSection } from './style';
 import Patient from './components/patient';
+import { useForm } from 'react-hook-form';
 
 
 function Cadastro() {
+  const { register, handleSubmit, errors } = useForm();
 
   const [showModal, setShowModal] = useState(false);
+
+  const onSubmit = (data) => console.log(data)
 
   const closeModal = (e) => {
     if (e.classList.contains('modal')) {
@@ -21,27 +25,31 @@ function Cadastro() {
     }
   }
 
+  const openModal = (e) => {
+    e.preventDefault()
+    setShowModal(true);
+  }
+
   return (
     <>
-      <h1 onClick={e => { setShowModal(true) }}>Open Modal</h1>
       <Navbar></Navbar>
       <Container>
-        <WhiteSection>
+        <WhiteSection onSubmit={handleSubmit(onSubmit)}>
           <header>
             <h2>Cadastro</h2>
             <p>Responsável</p>
           </header>
 
           <div>
-            <Input placeholder={'*Nome:'} />
-            <Input placeholder={'*CPF:'} />
-            <Input placeholder={'*Endereço:'} />
-            <Input placeholder={'*Telefone:'} />
-            <Input placeholder={'*E-mail:'} />
+            <input placeholder='*Nome:' type='text' {...register('name')} />
+            <input placeholder='*CPF:' type='text' {...register('cpf')} />
+            <input placeholder='*Endereço:' type='text' {...register('adress')} />
+            <input placeholder='*Telefone:' type='text' {...register('phone')} />
+            <input placeholder='*E-mail:' type='email' {...register('email')} />
           </div>
 
           <Buttons>
-            <PrimaryButton>Próximo</PrimaryButton>
+            <input type='submit' />
             <SecundaryButton>Já tenho conta</SecundaryButton>
           </Buttons>
         </WhiteSection>
