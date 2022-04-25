@@ -109,8 +109,9 @@ export const WhiteSection = styled.form`
     border-bottom: 2px solid #BED9DD; 
     outline: none; 
   }
+`;
 
-  div + div input {
+export const RegisterButton = styled.button`
     font-size: 0.8rem;
     font-weight: 600;
     color: #ffffff;
@@ -148,8 +149,7 @@ export const WhiteSection = styled.form`
     }
   }};
     }
-  }
-`;
+`
 
 export const Buttons = styled.div`
   display: flex;

@@ -7,7 +7,7 @@ import Input from '../../components/Input';
 import PrimaryButton from '../../components/PrimaryButton';
 import SecundaryButton from '../../components/SecundaryButton';
 import Footer from '../../components/Footer';
-import { Container, Navbar, BlueSection, Buttons, WhiteSection } from './style';
+import { Container, Navbar, BlueSection, Buttons, WhiteSection, RegisterButton } from './style';
 import Patient from './components/patient';
 import { useForm } from 'react-hook-form';
 
@@ -49,7 +49,7 @@ function Cadastro() {
           </div>
 
           <Buttons>
-            <input type='submit' />
+            <RegisterButton type='submit'>Cadastrar</RegisterButton>
             <SecundaryButton>Já tenho conta</SecundaryButton>
           </Buttons>
         </WhiteSection>
