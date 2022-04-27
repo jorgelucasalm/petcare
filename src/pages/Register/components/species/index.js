@@ -1,11 +1,20 @@
 import { useEffect } from 'react';
-import DogIcon from '../../../../assets/img/icon-home-dog.png'
-import CatIcon from '../../../../assets/img/icon-home-cat.png'
+import DogIcon from '../../../../assets/img/icon-home-dog.png';
+import CatIcon from '../../../../assets/img/icon-home-cat.png';
 
 //import InfoBox from '../../../../components/InfoBox';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
-import { Container, Card, InfoBox, SelectorContainer, Selector, Buttons } from './style';
+import ProgressBar from '../../../../components/ProgressBar';
+
+import {
+  Container,
+  Card,
+  InfoBox,
+  SelectorContainer,
+  Selector,
+  Buttons,
+} from './style';
 
 function Modal({ showModal, closeModal }, props) {
   return (
@@ -21,7 +30,7 @@ function Modal({ showModal, closeModal }, props) {
             <header>
               <h2>Cadastro</h2>
               <p>Espécies</p>
-              <img />
+              <ProgressBar size={''} />
             </header>
 
             <InfoBox color="alert">
@@ -30,13 +39,13 @@ function Modal({ showModal, closeModal }, props) {
             </InfoBox>
 
             <SelectorContainer>
-              <Selector color='dog'>
-                <img src={DogIcon}/>
+              <Selector color="dog">
+                <img src={DogIcon} />
                 <p>Canino</p>
               </Selector>
 
-              <Selector color='cat'>
-                <img src={CatIcon}/>
+              <Selector color="cat">
+                <img src={CatIcon} />
                 <p>Felino</p>
               </Selector>
             </SelectorContainer>
