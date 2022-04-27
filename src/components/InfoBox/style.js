@@ -7,7 +7,7 @@ export const Info = styled.div`
   width: 30%;
   max-width: 19rem;
   min-width: 16rem;
-  padding: 1rem 1rem;
+  padding: .5rem 1rem;
   background: ${(props) => {
     switch (props.color) {
       case 'notice':

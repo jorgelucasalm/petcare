@@ -69,7 +69,7 @@ export const Card = styled.div`
 
   @media (min-width: 700px) {
     display: flex;
-    height: 90vh;
+    height: 95vh;
   }
 `;
 
@@ -150,7 +150,7 @@ export const Selector = styled.button`
   align-items: center;
   gap: 1rem;
 
-  padding: 1rem;
+  padding: .5rem 1rem;
   border: none;
   border-radius: 8px;
 
@@ -189,5 +189,5 @@ export const Buttons = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1.2rem;
 `;

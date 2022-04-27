@@ -12,7 +12,7 @@ import { Container, Navbar, BlueSection, Buttons, WhiteSection } from './style';
 import Species from './components/species';
 
 
-function Cadastro() {
+function Register() {
 
   const [showModal, setShowModal] = useState(false);
 
@@ -62,4 +62,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default Register;
