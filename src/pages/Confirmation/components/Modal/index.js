@@ -40,7 +40,7 @@ function Modal({ showModal, closeModal }, props) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton color={'cat'}>Tela inicial</PrimaryButton>
+              <PrimaryButton>Tela inicial</PrimaryButton>
             </Buttons>
           </Card>
         </Container>

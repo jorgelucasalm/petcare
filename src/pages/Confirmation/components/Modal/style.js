@@ -27,10 +27,10 @@ export const Card = styled.div`
   color: ${(props) => {
     switch (props.color) {
       case 'dog':
-        return '#6DBF8E';
+        return '#378757';
 
       case 'cat':
-        return '#9960AE';
+        return '#431255';
 
       default:
         return '#074B55';
