@@ -6,13 +6,7 @@ import CatIcon from '../../../../assets/img/icon-home-cat.png';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import ProgressBar from '../../../../components/ProgressBar';
 
-import {
-  Container,
-  Card,
-  TextBox,
-  Selector,
-  Buttons
-} from './style';
+import { Container, Card, TextBox, Selector, Buttons } from './style';
 
 function Modal({ showModal, closeModal }, props) {
   return (
@@ -29,7 +23,7 @@ function Modal({ showModal, closeModal }, props) {
               <h2>Cadastro concluído</h2>
               <p>Acesso liberado</p>
 
-              <ProgressBar size={'75'}/>
+              <ProgressBar size={'75'} />
             </header>
 
             <Selector>
@@ -37,7 +31,9 @@ function Modal({ showModal, closeModal }, props) {
             </Selector>
 
             <TextBox color={'cat'}>
-              <h3>Seja bem-vindo, <span>Marley</span>!</h3>
+              <h3>
+                Seja bem-vindo, <span>Marley</span>!
+              </h3>
               <p>(Nº 123.456)</p>
             </TextBox>
 

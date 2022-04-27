@@ -10,7 +10,12 @@ function Modal({ showModal, closeModal }) {
   return (
     <>
       {showModal ? (
-        <Container className="modal" onClick={e => { closeModal(e.target) }}>
+        <Container
+          className="modal"
+          onClick={(e) => {
+            closeModal(e.target);
+          }}
+        >
           <Card>
             <header>
               <h2>Cadastro</h2>
@@ -23,7 +28,7 @@ function Modal({ showModal, closeModal }) {
               <Input placeholder={'*Raça:'} />
               <Input placeholder={'*Peso:'} />
               <Input placeholder={'*Idade:'} />
-              <Input placeholder={'Tipo Sangúineo:'}/>
+              <Input placeholder={'Tipo Sangúineo:'} />
               <Input placeholder={'Lorem Ipsum:'} />
             </TextBox>
 

@@ -1,4 +1,4 @@
-import {Container, Progress, Background} from './style'
+import { Container, Progress, Background } from './style';
 
 function ProgressBar() {
   return (

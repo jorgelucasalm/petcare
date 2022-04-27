@@ -1,13 +1,20 @@
 import { useEffect } from 'react';
-import DogIcon from '../../../../assets/img/icon-home-dog.png'
-import CatIcon from '../../../../assets/img/icon-home-cat.png'
+import DogIcon from '../../../../assets/img/icon-home-dog.png';
+import CatIcon from '../../../../assets/img/icon-home-cat.png';
 
 //import InfoBox from '../../../../components/InfoBox';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
 import ProgressBar from '../../../../components/ProgressBar';
 
-import { Container, Card, InfoBox, SelectorContainer, Selector, Buttons } from './style';
+import {
+  Container,
+  Card,
+  InfoBox,
+  SelectorContainer,
+  Selector,
+  Buttons,
+} from './style';
 
 function Modal({ showModal, closeModal }, props) {
   return (
@@ -32,13 +39,13 @@ function Modal({ showModal, closeModal }, props) {
             </InfoBox>
 
             <SelectorContainer>
-              <Selector color='dog'>
-                <img src={DogIcon}/>
+              <Selector color="dog">
+                <img src={DogIcon} />
                 <p>Canino</p>
               </Selector>
 
-              <Selector color='cat'>
-                <img src={CatIcon}/>
+              <Selector color="cat">
+                <img src={CatIcon} />
                 <p>Felino</p>
               </Selector>
             </SelectorContainer>

@@ -1,5 +1,4 @@
-import styled from "styled-components";
-
+import styled from 'styled-components';
 
 export const Info = styled.div`
   display: flex;
@@ -10,20 +9,20 @@ export const Info = styled.div`
   min-width: 16rem;
   padding: 1rem 1rem;
   background: ${(props) => {
-      switch (props.color) {
-        case 'notice':
-          return '#DBF1F4';
+    switch (props.color) {
+      case 'notice':
+        return '#DBF1F4';
 
-        case 'alert':
-          return '#FFF6E1';
+      case 'alert':
+        return '#FFF6E1';
 
-        case 'resolved':
-          return '#C7FFDD';
+      case 'resolved':
+        return '#C7FFDD';
 
-        default:
-          return '#FFF6E1';
-      }
-    }};
+      default:
+        return '#FFF6E1';
+    }
+  }};
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 
