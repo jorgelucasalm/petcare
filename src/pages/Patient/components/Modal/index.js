@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import Input from '../../../../components/Input/style';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
+import ProgressBar from '../../../../components/ProgressBar';
+
 import { Container, Card, TextBox, Buttons } from './style';
 
 function Modal({ showModal, closeModal }) {
@@ -13,7 +15,7 @@ function Modal({ showModal, closeModal }) {
             <header>
               <h2>Cadastro</h2>
               <p>Paciente</p>
-              <img />
+              <ProgressBar size={''} />
             </header>
 
             <TextBox>

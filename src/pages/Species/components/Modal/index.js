@@ -5,6 +5,8 @@ import CatIcon from '../../../../assets/img/icon-home-cat.png'
 //import InfoBox from '../../../../components/InfoBox';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
+import ProgressBar from '../../../../components/ProgressBar';
+
 import { Container, Card, InfoBox, SelectorContainer, Selector, Buttons } from './style';
 
 function Modal({ showModal, closeModal }, props) {
@@ -21,7 +23,7 @@ function Modal({ showModal, closeModal }, props) {
             <header>
               <h2>Cadastro</h2>
               <p>Espécies</p>
-              <img />
+              <ProgressBar size={''} />
             </header>
 
             <InfoBox color="alert">
