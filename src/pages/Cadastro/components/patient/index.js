@@ -8,7 +8,7 @@ function Patient({ showModal, closeModal }) {
   return (
     <>
       {showModal ? (
-        <Container className="modal" onClick={e => { closeModal(e.target) }}>
+        <Container className="modal" onClick={e => { e.target.className.includes('modal') && closeModal() }}>
           <Card>
             <header>
               <h2>Cadastro</h2>
@@ -21,7 +21,7 @@ function Patient({ showModal, closeModal }) {
               <Input placeholder={'*Raça:'} />
               <Input placeholder={'*Peso:'} />
               <Input placeholder={'*Idade:'} />
-              <Input placeholder={'Tipo Sangúineo:'}/>
+              <Input placeholder={'Tipo Sangúineo:'} />
               <Input placeholder={'Lorem Ipsum:'} />
             </TextBox>
 

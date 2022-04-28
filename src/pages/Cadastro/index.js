@@ -16,6 +16,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 function Cadastro() {
   const [showModal, setShowModal] = useState(false);
+  const [userRegister, setUserRegister] = useState([]);
 
   const schema = yup.object().shape({
     name: yup.string().max(40, "Seu nome não pode ser tão grande!").required('Campo obrigatório'),
@@ -29,17 +30,14 @@ function Cadastro() {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data)
-
-  const closeModal = (e) => {
-    if (e.classList.contains('modal')) {
-      setShowModal(false);
-    }
+  const onSubmit = (dados) => {
+    setUserRegister(dados)
+    handleModal()
+    console.log(dados)
   }
 
-  const openModal = (e) => {
-    e.preventDefault()
-    setShowModal(true);
+  const handleModal = (data) => {
+    setShowModal(!showModal);
   }
 
   return (
@@ -77,7 +75,7 @@ function Cadastro() {
           <img src={Dog} alt="mascote-canino" />
         </BlueSection>
 
-        <Patient showModal={showModal} closeModal={closeModal} />
+        <Patient showModal={showModal} closeModal={handleModal} />
 
       </Container>
       <Footer />
