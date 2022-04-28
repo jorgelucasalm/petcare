@@ -98,6 +98,12 @@ export const WhiteSection = styled.form`
     width: fit-content;
   }
 
+  div span {
+    color: red;
+    font-size: .7rem;
+    margin-left: 1rem;
+  }
+
   div input {
     height: 2rem;
     font-weight: 550;
