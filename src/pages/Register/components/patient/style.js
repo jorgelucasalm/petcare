@@ -67,7 +67,7 @@ export const Card = styled.div`
 
   @media (min-width: 700px) {
     display: flex;
-    height: 90vh;
+    height: 95vh;
   }
 `;
 

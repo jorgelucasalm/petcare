@@ -24,18 +24,6 @@ export const Card = styled.div`
   min-width: 323px;
   max-width: 600px;
   background-color: #ffffff;
-  color: ${(props) => {
-    switch (props.color) {
-      case 'dog':
-        return '#378757';
-
-      case 'cat':
-        return '#431255';
-
-      default:
-        return '#074B55';
-    }
-  }};
 
   display: flex;
   flex-direction: column;
@@ -68,7 +56,6 @@ export const Card = styled.div`
     max-width: 19rem;
     min-width: 15rem;
   }
-
   a {
     text-decoration: none;
     font-size: 0.7rem;
@@ -84,67 +71,11 @@ export const Card = styled.div`
   }
 `;
 
-export const Selector = styled.div`
-  transition: all 0.3s ease-out;
-  padding: 2rem;
-  animation: scale 2s linear infinite;
-
-  img {
-    width: 100%;
-    min-width: 6rem;
-    max-width: 9rem;
-  }
-
-  @keyframes scale {
-    0% {
-      transform: scale(1.05);
-      transition: all 0.3s ease-out;
-    }
-    50% {
-      transform: scale(1);
-      transition: all 0.3s ease-out;
-    }
-
-    100% {
-      transform: scale(1.05);
-      transition: all 0.3s ease-out;
-    }
-  }
-`;
-
 export const TextBox = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  color: ${(props) => {
-    switch (props.color) {
-      case 'dog':
-        return '#6DBF8E';
-
-      case 'cat':
-        return '#9960AE';
-
-      default:
-        return '#074B55';
-    }
-  }};
-
-  h3 {
-    font-size: 0.9rem;
-  }
-
-  span {
-    font-weight: 600;
-  }
-
-  p {
-    font-size: 0.8rem;
-    font-weight: 500;
-    color: #909090;
-  }
+  padding: 1rem;
+  width: fit-content;
 `;
 
 export const Buttons = styled.div`

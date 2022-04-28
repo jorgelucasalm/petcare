@@ -1,14 +1,12 @@
 import { useEffect } from 'react';
-// import DogIcon from '../../../../assets/img/icon-home-dog.png';
-import CatIcon from '../../../../assets/img/icon-home-cat.png';
-
-//import InfoBox from '../../../../components/InfoBox';
+import Input from '../../../../components/Input/style';
 import PrimaryButton from '../../../../components/PrimaryButton';
+import SecundaryButton from '../../../../components/SecundaryButton';
 import ProgressBar from '../../../../components/ProgressBar';
 
-import { Container, Card, TextBox, Selector, Buttons } from './style';
+import { Container, Card, TextBox, Buttons } from './style';
 
-function Modal({ showModal, closeModal }, props) {
+function Access({ showModal, closeModal }) {
   return (
     <>
       {showModal ? (
@@ -18,27 +16,23 @@ function Modal({ showModal, closeModal }, props) {
             closeModal(e.target);
           }}
         >
-          <Card color={'cat'}>
+          <Card>
             <header>
-              <h2>Cadastro concluído</h2>
-              <p>Acesso liberado</p>
-
-              <ProgressBar size={'75'} />
+              <h2>Cadastro</h2>
+              <p>Acesso</p>
+              <ProgressBar size={''} />
             </header>
 
-            <Selector>
-              <img src={CatIcon} />
-            </Selector>
-
-            <TextBox color={'cat'}>
-              <h3>
-                Seja bem-vindo, <span>Marley</span>!
-              </h3>
-              <p>(Nº 123.456)</p>
+            <TextBox>
+              <Input placeholder={'*Nome de usuário:'} />
+              <Input placeholder={'*E-mail:'} />
+              <Input placeholder={'*Senha:'} />
+              <Input placeholder={'*Confirmação de senha:'} />
             </TextBox>
 
             <Buttons>
-              <PrimaryButton>Tela inicial</PrimaryButton>
+              <PrimaryButton color="cat">Próximo</PrimaryButton>
+              <SecundaryButton>Voltar</SecundaryButton>
             </Buttons>
           </Card>
         </Container>
@@ -49,4 +43,4 @@ function Modal({ showModal, closeModal }, props) {
   );
 }
 
-export default Modal;
+export default Access;

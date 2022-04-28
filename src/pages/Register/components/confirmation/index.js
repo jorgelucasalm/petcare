@@ -8,7 +8,7 @@ import ProgressBar from '../../../../components/ProgressBar';
 
 import { Container, Card, TextBox, Selector, Buttons } from './style';
 
-function Modal({ showModal, closeModal }, props) {
+function Confirmation ({ showModal, closeModal }, props) {
   return (
     <>
       {showModal ? (
@@ -49,4 +49,4 @@ function Modal({ showModal, closeModal }, props) {
   );
 }
 
-export default Modal;
+export default Confirmation;

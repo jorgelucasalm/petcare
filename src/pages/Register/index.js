@@ -8,7 +8,10 @@ import PrimaryButton from '../../components/PrimaryButton';
 import SecundaryButton from '../../components/SecundaryButton';
 import Footer from '../../components/Footer';
 import { Container, Navbar, BlueSection, Buttons, WhiteSection } from './style';
-// import Patient from './components/patient';
+
+import Confirmation from './components/confirmation';
+import Access from './components/access';
+import Patient from './components/patient';
 import Species from './components/species';
 
 
@@ -53,8 +56,8 @@ function Register() {
           <img src={Dog} alt="mascote-canino" />
         </BlueSection>
 
-        {/* <Patient showModal={showModal} closeModal={closeModal} /> */}
-        <Species showModal={showModal} closeModal={closeModal} />
+        <Access showModal={showModal} closeModal={closeModal} />
+        {/* <Species showModal={showModal} closeModal={closeModal} /> */}
 
       </Container>
       <Footer />
