@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const PrimaryFooter = styled.footer `
+    display: flex;
     position: absolute;
     bottom: 0;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
