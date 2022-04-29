@@ -11,13 +11,14 @@ import { yupResolver } from '@hookform/resolvers/yup'
 
 
 import ModalSpecies from './components/species'
-import ModalPatient from './components/patient'
 import ModalConfirmation from './components/confirmation'
 import ModalAccess from './components/access'
+import ModalPatient from './components/patient'
 
 
 function Cadastro() {
   const [showModal, setShowModal] = useState(false);
+  const [index, setIndex] = useState(0);
   const [userRegister, setUserRegister] = useState([]);
 
   const schema = yup.object().shape({
@@ -34,17 +35,27 @@ function Cadastro() {
 
   const onSubmit = (dados) => {
     setUserRegister(dados)
+    setIndex(index === 0 ? 1 : index)
     handleModal()
-    console.log(dados)
+    console.log(index, showModal)
   }
 
   const handleModal = (data) => {
     setShowModal(!showModal);
   }
 
+  const saveData = (e) => {
+    setIndex(index + 1)
+    console.log(e)
+  }
+
+  const backModal = () => {
+    setIndex(index - 1)
+  }
+
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       <Container>
         <WhiteSection onSubmit={handleSubmit(onSubmit)}>
           <header>
@@ -77,7 +88,10 @@ function Cadastro() {
           <img src={Dog} alt="mascote-canino" />
         </BlueSection>
 
-        <ModalPatient showModal={showModal} closeModal={handleModal} />
+        <ModalSpecies showModal={showModal && index === 1} closeModal={handleModal} onSubmit={saveData} />
+        <ModalPatient showModal={showModal && index === 2} closeModal={handleModal} onSubmit={saveData} back={backModal} />
+        <ModalAccess showModal={showModal && index === 3} closeModal={handleModal} onSubmit={saveData} back={backModal} />
+        <ModalConfirmation showModal={showModal && index === 4} closeModal={handleModal} onSubmit={saveData} back={backModal} />
 
       </Container>
       <Footer />

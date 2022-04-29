@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Input from '../../../../components/Input/style';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
@@ -6,21 +5,19 @@ import ProgressBar from '../../../../components/ProgressBar';
 
 import { Container, Card, TextBox, Buttons } from './style';
 
-function Access({ showModal, closeModal }) {
+function Access({ showModal, closeModal, onSubmit }) {
   return (
     <>
       {showModal ? (
         <Container
           className="modal"
-          onClick={(e) => {
-            closeModal(e.target);
-          }}
+          onClick={e => { e.target.className.includes('modal') && closeModal() }}
         >
           <Card>
             <header>
               <h2>Cadastro</h2>
               <p>Acesso</p>
-              <ProgressBar size={''} />
+              <ProgressBar size={'75'} />
             </header>
 
             <TextBox>
@@ -31,7 +28,7 @@ function Access({ showModal, closeModal }) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton color="cat">Próximo</PrimaryButton>
+              <PrimaryButton color={'dog'} onClick={onSubmit}>Próximo</PrimaryButton>
               <SecundaryButton>Voltar</SecundaryButton>
             </Buttons>
           </Card>

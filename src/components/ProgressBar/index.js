@@ -1,10 +1,10 @@
 import { Container, Progress, Background } from './style';
 
-function ProgressBar() {
+function ProgressBar({ size }) {
   return (
     <>
       <Container>
-        <Progress />
+        <Progress size={size} />
         <Background />
       </Container>
     </>

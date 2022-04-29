@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
 import Input from '../../../../components/Input';
 import PrimaryButton from '../../../../components/PrimaryButton';
+import ProgressBar from '../../../../components/ProgressBar';
 import SecundaryButton from '../../../../components/SecundaryButton';
 import { Container, Card, TextBox, Buttons } from './style';
 
-function Patient({ showModal, closeModal }) {
+function Patient({ showModal, closeModal, back, onSubmit }) {
   return (
     <>
       {showModal ? (
@@ -13,7 +13,7 @@ function Patient({ showModal, closeModal }) {
             <header>
               <h2>Cadastro</h2>
               <p>Paciente</p>
-              <img />
+              <ProgressBar size={'50'} />
             </header>
 
             <TextBox>
@@ -26,8 +26,8 @@ function Patient({ showModal, closeModal }) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton>Próximo</PrimaryButton>
-              <SecundaryButton>Já tenho conta</SecundaryButton>
+              <PrimaryButton onClick={onSubmit}>Próximo</PrimaryButton>
+              <SecundaryButton onClick={back}>Voltar</SecundaryButton>
             </Buttons>
           </Card>
         </Container>

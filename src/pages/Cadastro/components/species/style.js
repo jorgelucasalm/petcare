@@ -83,20 +83,20 @@ export const InfoBox = styled.div`
   padding: 1rem 1rem;
   color: #3c3c3c;
   background: ${(props) => {
-      switch (props.color) {
-        case 'notice':
-          return '#DBF1F4';
+    switch (props.color) {
+      case 'notice':
+        return '#DBF1F4';
 
-        case 'alert':
-          return '#FFF6E1';
+      case 'alert':
+        return '#FFF6E1';
 
-        case 'resolved':
-          return '#C7FFDD';
+      case 'resolved':
+        return '#C7FFDD';
 
-        default:
-          return '#FFF6E1';
-      }
-    }};
+      default:
+        return '#FFF6E1';
+    }
+  }};
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -105,20 +105,20 @@ export const InfoBox = styled.div`
 
   &:hover {
     background: ${(props) => {
-      switch (props.color) {
-        case 'notice':
-          return '#C0F2F9';
+    switch (props.color) {
+      case 'notice':
+        return '#C0F2F9';
 
-        case 'alert':
-          return '#fdeeca';
+      case 'alert':
+        return '#fdeeca';
 
-        case 'resolved':
-          return '#A0EABE';
+      case 'resolved':
+        return '#A0EABE';
 
-        default:
-          return '#FFF6E1';
-      }
-    }};
+      default:
+        return '#FFF6E1';
+    }
+  }};
     transform: scale(1.05);
     transition: all 0.3s ease-out;
   }
@@ -159,23 +159,38 @@ export const Selector = styled.button`
 
   transition: all 0.3s ease-out;
 
+  &:focus {
+    border: 2px solid ${(props) => {
+    switch (props.color) {
+      case 'dog':
+        return '#6DBF8E';
+
+      case 'cat':
+        return '#9960AE';
+
+      default:
+        return '#074B55';
+    }
+  }};
+  }
+
   &:hover {
     transform: scale(1.05);
     font-weight: 500;
     transition: all 0.3s ease-out;
 
     background: ${(props) => {
-      switch (props.color) {
-        case 'dog':
-          return '#F9FCF3';
+    switch (props.color) {
+      case 'dog':
+        return '#F9FCF3';
 
-        case 'cat':
-          return '#FBF9FC';
+      case 'cat':
+        return '#FBF9FC';
 
-        default:
-          return '#FAFEFF';
-      }
-    }};
+      default:
+        return '#FAFEFF';
+    }
+  }};
   }
 
   img {

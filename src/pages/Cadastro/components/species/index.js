@@ -1,10 +1,9 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 import DogIcon from '../../../../assets/img/icon-home-dog.png';
 import CatIcon from '../../../../assets/img/icon-home-cat.png';
 
 //import InfoBox from '../../../../components/InfoBox';
 import PrimaryButton from '../../../../components/PrimaryButton';
-import SecundaryButton from '../../../../components/SecundaryButton';
 import ProgressBar from '../../../../components/ProgressBar';
 
 import {
@@ -16,21 +15,26 @@ import {
   Buttons,
 } from './style';
 
-function Modal({ showModal, closeModal }, props) {
+function Modal({ showModal, closeModal, onSubmit }, props) {
+  const [specie, setSpecie] = useState('')
+  const [showModalPacient, setShowModalPacient] = useState(false);
+
+  const validationSelected = () => {
+    specie !== '' && onSubmit(specie)
+  }
+
   return (
     <>
       {showModal ? (
         <Container
           className="modal"
-          onClick={(e) => {
-            closeModal(e.target);
-          }}
+          onClick={e => { e.target.className.includes('modal') && closeModal() }}
         >
           <Card>
             <header>
               <h2>Cadastro</h2>
               <p>Espécies</p>
-              <ProgressBar size={''} />
+              <ProgressBar size={'25'} />
             </header>
 
             <InfoBox color="alert">
@@ -39,26 +43,26 @@ function Modal({ showModal, closeModal }, props) {
             </InfoBox>
 
             <SelectorContainer>
-              <Selector color="dog">
-                <img src={DogIcon} />
+              <Selector color="dog" onClick={() => setSpecie('dog')}>
+                <img src={DogIcon} alt='imagem de cachorro' />
                 <p>Canino</p>
               </Selector>
 
-              <Selector color="cat">
-                <img src={CatIcon} />
+              <Selector color="cat" onClick={() => setSpecie('cat')}>
+                <img src={CatIcon} alt='imagem de gato' />
                 <p>Felino</p>
               </Selector>
             </SelectorContainer>
 
             <Buttons>
-              <PrimaryButton>Próximo</PrimaryButton>
-              <SecundaryButton>Voltar</SecundaryButton>
+              <PrimaryButton onClick={validationSelected}>Próximo</PrimaryButton>
             </Buttons>
           </Card>
         </Container>
       ) : (
         <></>
-      )}
+      )
+      }
     </>
   );
 }
