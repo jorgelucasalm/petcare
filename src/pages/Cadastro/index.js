@@ -2,16 +2,18 @@ import { useState } from 'react';
 
 import Logo from '../../assets/img/logo-petcare.png';
 import Dog from '../../assets/img/welcome-dog.png';
-
-import Input from '../../components/Input';
-import PrimaryButton from '../../components/PrimaryButton';
 import SecundaryButton from '../../components/SecundaryButton';
 import Footer from '../../components/Footer';
 import { Container, Navbar, BlueSection, Buttons, WhiteSection, RegisterButton } from './style';
-import Patient from './components/patient';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
+
+
+import ModalSpecies from './components/species'
+import ModalPatient from './components/patient'
+import ModalConfirmation from './components/confirmation'
+import ModalAccess from './components/access'
 
 
 function Cadastro() {
@@ -75,7 +77,7 @@ function Cadastro() {
           <img src={Dog} alt="mascote-canino" />
         </BlueSection>
 
-        <Patient showModal={showModal} closeModal={handleModal} />
+        <ModalPatient showModal={showModal} closeModal={handleModal} />
 
       </Container>
       <Footer />
