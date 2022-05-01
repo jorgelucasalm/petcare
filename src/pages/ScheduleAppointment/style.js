@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #3c3c3c99;
+  padding: 0rem;
+  margin: 0;
+  inset: 0;
+  z-index: 9999;
+`;
+
+export const Card = styled.div`
+  margin: 1rem 0;
+  overflow: scroll;
+
   width: 100%;
   min-width: 323px;
   max-width: 600px;
@@ -14,19 +30,20 @@ export const Container = styled.div`
   gap: 1rem;
   padding: 2rem 0rem;
 
-  :-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
+  &::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 16px;
   }
 
-  :-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     background: #ffffff;
-    border-radius: 16px; /* color of the tracking area */
+    border-radius: 16px;
   }
 
-  :-webkit-scrollbar-thumb {
-    background-color: #bcdbb3; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid #ffffff; /* creates padding around scroll thumb */
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(138, 195, 203, 0.56);;
+    border-radius: 20px;
+    border: 3px solid #ffffff;
   }
 
   header {
@@ -53,28 +70,27 @@ export const Container = styled.div`
 `;
 
 export const DropdownContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 280px;
+  min-width: 250px;
+  gap: 1rem;
 `;
 
 export const Dropdown = styled.div`
-
-
   p {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: #7d7d7d;
   }
 
   div {
     height: auto;
-    width: fit-content;
+    width: 100%;
     color: #b4b4b4;
     border-radius: 1rem;
 
@@ -93,6 +109,49 @@ export const Dropdown = styled.div`
   }
 `;
 
-export const Radio = styled.div`
+export const RadioContent = styled.div`
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  gap: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #7d7d7d;
 
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  input {
+    size: 1rem;
+  }
+`;
+
+export const Condition = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  max-width: 280px;
+  min-width: 250px;
+
+  h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #7d7d7d;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 0.8rem;
+    color: #909090;
+  }
+`;
+
+export const Buttons = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
 `;
