@@ -24,18 +24,7 @@ export const Card = styled.div`
   min-width: 323px;
   max-width: 600px;
   background-color: #ffffff;
-  color: ${(props) => {
-    switch (props.color) {
-      case 'dog':
-        return '#378757';
-
-      case 'cat':
-        return '#431255';
-
-      default:
-        return '#074B55';
-    }
-  }};
+  color: #074B55;
 
   display: flex;
   flex-direction: column;

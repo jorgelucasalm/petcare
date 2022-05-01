@@ -13,6 +13,7 @@ export const Container = styled.div`
   margin: 0;
 
   inset: 0;
+  z-index: 9999;
 `;
 
 export const Card = styled.div`
