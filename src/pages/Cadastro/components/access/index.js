@@ -28,7 +28,7 @@ function Access({ showModal, closeModal, onSubmit }) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton color={'dog'} onClick={onSubmit}>Próximo</PrimaryButton>
+              <PrimaryButton onClick={onSubmit}>Próximo</PrimaryButton>
               <SecundaryButton>Voltar</SecundaryButton>
             </Buttons>
           </Card>

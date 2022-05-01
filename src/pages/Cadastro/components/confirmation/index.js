@@ -26,7 +26,7 @@ function Confirmation({ showModal, closeModal }, props) {
               <img src={CatIcon} alt='Imagem de gato pulsando' />
             </Selector>
 
-            <TextBox color={'cat'}>
+            <TextBox>
               <h3>
                 Seja bem-vindo, <span>Marley</span>!
               </h3>
@@ -34,7 +34,7 @@ function Confirmation({ showModal, closeModal }, props) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton color={'cat'}>Tela inicial</PrimaryButton>
+              <PrimaryButton>Tela inicial</PrimaryButton>
             </Buttons>
           </Card>
         </Container>
