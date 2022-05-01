@@ -5,7 +5,7 @@ export const Button = styled.button`
   font-family: Arial; /*Trocar de fonte*/
   font-size: 0.8rem;
   font-weight: 600;
-  color: #${(props) => {
+  color: ${(props) => {
       switch (props.color) {
         case 'dog':
           return '#6DBF8E';
