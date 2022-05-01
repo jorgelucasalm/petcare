@@ -1,8 +1,8 @@
 import Button from "./style"
 
-function PrimaryButton({children},/*{color}*/) {
+function PrimaryButton({children, color},/*{color}*/) {
     return (
-      <Button /*color={color}*/> {children}</Button>
+      <Button color={color} children={children}></Button>
     );
   }
   

@@ -1,8 +1,8 @@
 import { Button } from "./style";
 
-function SecundaryButton ({children}) {
+function SecundaryButton ({children, color}) {
     return (
-        <Button>{children}</Button>
+        <Button color={color} children={children}></Button>
     )
 }
 
