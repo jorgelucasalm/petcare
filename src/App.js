@@ -1,13 +1,14 @@
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Cadastro from "./pages/Cadastro";
-import Categories from "./pages/Categories";
+import Requisitions from "./pages/Requisitions";
 
 function App() {
   return (
     //<Login />
     //<Cadastro />
-    <Categories />
+    //<Categories />
+    <Requisitions/>
   );
 }
 
