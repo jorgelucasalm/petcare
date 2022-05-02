@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
-const PrimaryFooter = styled.footer `
-    position: absolute;
+const PrimaryFooter = styled.footer`
+    position: relative;
     bottom: 0;
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,17 +13,17 @@ const PrimaryFooter = styled.footer `
     font-size: .9rem;
 
     background-color: ${(props) => {
-        switch (props.color) {
-            case 'dog':
-                return '#6DBF8E'
-            
-            case 'cat':
-                return '#9960AE'
+    switch (props.color) {
+      case 'dog':
+        return '#6DBF8E'
 
-            default:
-                return '#074B55'
-        }
-    }};
+      case 'cat':
+        return '#9960AE'
+
+      default:
+        return '#074B55'
+    }
+  }};
 `;
 
 export default PrimaryFooter;
