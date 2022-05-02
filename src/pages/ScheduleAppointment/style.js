@@ -41,7 +41,7 @@ export const Card = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(138, 195, 203, 0.56);;
+    background-color: rgba(138, 195, 203, 0.56);
     border-radius: 20px;
     border: 3px solid #ffffff;
   }
@@ -79,10 +79,8 @@ export const DropdownContent = styled.div`
 
   max-width: 280px;
   min-width: 250px;
-  gap: 1rem;
-`;
+  
 
-export const Dropdown = styled.div`
   p {
     display: flex;
     flex-direction: column;
@@ -90,28 +88,11 @@ export const Dropdown = styled.div`
     font-size: 0.8rem;
     font-weight: 500;
     color: #7d7d7d;
-  }
 
-  div {
-    height: auto;
-    width: 100%;
-    color: #b4b4b4;
-    border-radius: 1rem;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0.2rem 0;
-    max-width: 280px;
-    min-width: 250px;
-    padding: 1rem;
-    background-color: #fdfdfd;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 0.3rem;
-    font-size: 0.8rem;
+    padding: 1rem 0rem .5rem;
   }
 `;
+
 
 export const RadioContent = styled.div`
   width: 280px;
@@ -151,11 +132,15 @@ export const Condition = styled.div`
     font-size: 0.8rem;
     color: #909090;
   }
+
+  div {
+    padding: 0;
+  }
 `;
 
 export const Buttons = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
 `;

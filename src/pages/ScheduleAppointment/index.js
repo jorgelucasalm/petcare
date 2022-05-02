@@ -1,7 +1,15 @@
 import PrimaryButton from '../../components/PrimaryButton';
 import SecundaryButton from '../../components/SecundaryButton';
+import Dropdown from '../../components/Dropdown';
 
-import { Container, Card, DropdownContent, Dropdown, RadioContent, Condition, Buttons } from './style';
+import {
+  Container,
+  Card,
+  DropdownContent,
+  RadioContent,
+  Condition,
+  Buttons,
+} from './style';
 
 function ScheduleAppointment() {
   return (
@@ -17,19 +25,25 @@ function ScheduleAppointment() {
           </header>
 
           <DropdownContent>
+            <p>Selecione uma categoria:</p>
             <Dropdown>
-              <p>Categoria do Agendamento</p>
-              <div>Dropdown</div>
+              <option>Teste 1</option>
+              <option>Teste 2</option>
+              <option>Teste 3</option>
             </Dropdown>
 
+            <p>Data para o atendimento:</p>
             <Dropdown>
-              <p>Data para o atendimento:</p>
-              <div>Dropdown</div>
+              <option>Teste 1</option>
+              <option>Teste 2</option>
+              <option>Teste 3</option>
             </Dropdown>
 
+            <p>Horário para o atendimento:</p>
             <Dropdown>
-              <p>Horário para o atendimento:</p>
-              <div>Dropdown</div>
+              <option>Teste 1</option>
+              <option>Teste 2</option>
+              <option>Teste 3</option>
             </Dropdown>
           </DropdownContent>
 
@@ -51,9 +65,12 @@ function ScheduleAppointment() {
           <Condition>
             <div>
               <h3>Médico:</h3>
+
+              <p>Selecione o especialista anterior:</p>
               <Dropdown>
-                <p>Selecione o especialista anterior:</p>
-                <div>Dropdown</div>
+                <option>Teste 1</option>
+                <option>Teste 2</option>
+                <option>Teste 3</option>
               </Dropdown>
             </div>
 
@@ -73,8 +90,8 @@ function ScheduleAppointment() {
           </Condition>
 
           <Buttons>
-            <PrimaryButton color={""}>Solicitar</PrimaryButton>
-            <SecundaryButton color={""}>Cancelar</SecundaryButton>
+            <PrimaryButton color={''}>Solicitar</PrimaryButton>
+            <SecundaryButton color={''}>Cancelar</SecundaryButton>
           </Buttons>
         </Card>
       </Container>
