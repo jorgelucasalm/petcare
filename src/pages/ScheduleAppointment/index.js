@@ -65,7 +65,7 @@ function ScheduleAppointment() {
                   para outro profissional?
                 </p>
                 <div>
-                  <input type={'radio'} id={'Y'} name={'choice'} />
+                  <input type={'checkbox'} id={'Y'} name={'choice'} />
                   <label for={'Y'}>Sim</label>
                 </div>
               </RadioContent>
@@ -73,8 +73,8 @@ function ScheduleAppointment() {
           </Condition>
 
           <Buttons>
-            <PrimaryButton color={"cat"}>Confirmar</PrimaryButton>
-            <SecundaryButton color={"cat"}>Cancelar</SecundaryButton>
+            <PrimaryButton color={""}>Solicitar</PrimaryButton>
+            <SecundaryButton color={""}>Cancelar</SecundaryButton>
           </Buttons>
         </Card>
       </Container>

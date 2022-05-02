@@ -67,6 +67,10 @@ export const Card = styled.div`
       max-width: 360px;
     }
   }
+
+  @media (max-width: 700px) {
+    margin: 0;
+  }
 `;
 
 export const DropdownContent = styled.div`
