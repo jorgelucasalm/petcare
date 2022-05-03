@@ -14,7 +14,7 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-  margin: 10rem;
+  margin: 1rem;
   width: 100%;
   min-width: 300px;
   max-width: 450px;
@@ -46,7 +46,7 @@ export const Card = styled.div`
       font-size: 0.8rem;
       text-align: center;
       padding: 0.5rem;
-      max-width: 30px;
+      max-width: 300px;
     }
   }
   @media (max-width: 700px) {

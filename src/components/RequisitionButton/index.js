@@ -4,16 +4,10 @@ import Check from "../../assets/img/check.svg"
 import Retorno from "../../assets/img/retorno.svg"
 import Cancel from "../../assets/img/cancel.svg"
 
-function SelectButton({children}) {
+function SelectButton({children, color}) {
     return (
-      <Button color={"cancel"}>
-        <span>
-          <img src={Cancel} />
-        </span>
-        <div>
-          {children}
-          <text>12/02</text>
-        </div>
+      <Button color={color}>
+        {children}
         
 
       </Button>
