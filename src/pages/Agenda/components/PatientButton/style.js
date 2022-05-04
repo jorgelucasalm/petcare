@@ -30,27 +30,13 @@ export const PatientButton = styled.button`
     gap: 0.5rem;
   }
 
-  span {
+  img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
-    background: ${(props) => {
-      switch (props.color) {
-        case 'clock':
-          return '#E0C274';
-        case 'return':
-          return '#8BBFDC';
-        case 'check':
-          return '#8AD9A9';
-        case 'cancel':
-          return '#fa897b';
-        default:
-          return '#8BBFDC';
-      }
-    }};
   }
 `;
 
