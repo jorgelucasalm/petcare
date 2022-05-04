@@ -1,8 +1,8 @@
 import Button from "./style"
 
-function SelectButton({children, color, bg}) {
+function SelectButton({children, color}) {
     return (
-      <Button color={color} bg={bg}>{children}</Button>
+      <Button color={color}>{children}</Button>
     );
   }
   
