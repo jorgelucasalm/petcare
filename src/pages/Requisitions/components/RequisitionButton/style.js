@@ -33,8 +33,8 @@ const Button = styled.button`
   }
 
   &:hover {
-    color: #3c3c3c68;
-    background: #ebebeb;
+    color: #3c3c3c;
+    background: #efefef;
   }
   img {
     width: 60%;

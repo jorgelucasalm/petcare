@@ -1,4 +1,4 @@
-import RequisitonButton from '../../components/RequisitionButton';
+import RequisitonButton from './components/RequisitionButton';
 import SecundaryButton from '../../components/SecundaryButton';
 
 import Clock from '../../assets/img/clock.svg';
