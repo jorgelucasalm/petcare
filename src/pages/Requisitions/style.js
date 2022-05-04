@@ -69,8 +69,8 @@ export const RequisitionContent = styled.div`
 `;
 
 export const Buttons = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
 `;

@@ -1,5 +1,5 @@
 import RequisitonButton from '../../components/RequisitionButton';
-import SecundaryButton from '../../components/SecundaryButton'
+import SecundaryButton from '../../components/SecundaryButton';
 
 import Clock from '../../assets/img/clock.svg';
 import Check from '../../assets/img/check.svg';
@@ -141,7 +141,7 @@ function Requisitions() {
           </RequisitionContent>
 
           <Buttons>
-              <SecundaryButton>Voltar</SecundaryButton>
+            <SecundaryButton>Voltar</SecundaryButton>
           </Buttons>
         </Card>
       </Container>
