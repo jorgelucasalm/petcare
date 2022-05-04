@@ -2,13 +2,14 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Cadastro from "./pages/Cadastro";
 import Requisitions from "./pages/Requisitions";
+import VacineCard from "./pages/VacineCard";
 
 function App() {
   return (
     //<Login />
     //<Cadastro />
     //<Categories />
-    <Requisitions/>
+    <VacineCard/>
   );
 }
 
