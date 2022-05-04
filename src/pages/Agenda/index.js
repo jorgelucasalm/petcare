@@ -1,9 +1,12 @@
 import SecundaryButton from '../../components/SecundaryButton';
-import PatientButton from './components/PatientButton'
+import PatientButton from './components/PatientButton';
 
 import Clock from '../../assets/img/clock.svg';
 import Check from '../../assets/img/check.svg';
 import Cancel from '../../assets/img/cancel.svg';
+
+import Dog from '../../assets/img/MicroIcon-dog.svg';
+import Cat from '../../assets/img/MicroIcon-cat.svg';
 
 import { Container, Card, Content, TextBox, Buttons } from './style';
 
@@ -17,13 +20,10 @@ function Agenda() {
           </header>
 
           <Content>
-              Dropdown
-              
+            Dropdown
             <PatientButton>
               <div>
-                <span>
-                  <img src={Clock} />
-                </span>
+                <img src={Dog} />
 
                 <TextBox>
                   <h3>Nome do Paciente</h3>
@@ -36,9 +36,7 @@ function Agenda() {
 
             <PatientButton>
               <div>
-                <span>
-                  <img src={Clock} />
-                </span>
+                <img src={Cat} />
 
                 <TextBox>
                   <h3>Nome do Paciente</h3>
@@ -51,9 +49,7 @@ function Agenda() {
 
             <PatientButton>
               <div>
-                <span>
-                  <img src={Clock} />
-                </span>
+                <img src={Dog} />
 
                 <TextBox>
                   <h3>Nome do Paciente</h3>
@@ -63,12 +59,10 @@ function Agenda() {
 
               <p>12/02</p>
             </PatientButton>
-
+            
             <PatientButton>
               <div>
-                <span>
-                  <img src={Clock} />
-                </span>
+                <img src={Cat} />
 
                 <TextBox>
                   <h3>Nome do Paciente</h3>
