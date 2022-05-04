@@ -9,10 +9,10 @@ const Button = styled.button`
   color: #909090;
   text-decoration: none;
   text-align: left;
-  width: 220px;
-  height: 48px;
-  padding: 0.8rem;
-  margin: 0.5rem 1rem;
+  width: 100%;
+  max-width: 280px;
+
+  padding: 1rem 0.8rem;
   border: none;
   transition: all 0.3s ease-out;
   background: #fdfdfd;
@@ -22,13 +22,14 @@ const Button = styled.button`
   div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   p {
     font-weight: 600;
     font-size: 0.8rem;
-    text-align: left;
+
+    margin-right: 8rem;
   }
 
   &:hover {
@@ -65,7 +66,7 @@ const Button = styled.button`
     }};
   }
   @media (max-width: 700px) {
-    min-width: 220px;
+    min-width: 280px;
   }
 `;
 
