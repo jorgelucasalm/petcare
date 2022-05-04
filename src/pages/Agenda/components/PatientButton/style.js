@@ -15,10 +15,7 @@ export const PatientButton = styled.button`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 
-  &:hover {
-    color: #3c3c3c;
-    background: #ebebeb;
-  }
+
 
   p {
     font-weight: 500;
@@ -38,6 +35,16 @@ export const PatientButton = styled.button`
     height: 1.5rem;
     border-radius: 50%;
   }
+
+  &:hover {
+    color: #3c3c3c;
+    background: #efefef;
+
+    img {
+      transform: scale(1.1); 
+    }
+  }
+
 `;
 
 export default PatientButton;
