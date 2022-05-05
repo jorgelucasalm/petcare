@@ -9,8 +9,8 @@ const Button = styled.button`
   color: #909090;
   text-decoration: none;
   text-align: left;
-  width: 100%;
-  max-width: 280px;
+  width: 90%;
+  max-width: 260px;
   padding: 1rem 0.8rem;
   border: none;
   transition: all 0.3s ease-out;
