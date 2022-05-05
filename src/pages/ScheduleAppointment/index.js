@@ -2,7 +2,7 @@ import PrimaryButton from '../../components/PrimaryButton';
 import SecundaryButton from '../../components/SecundaryButton';
 import Dropdown from '../../components/Dropdown';
 
-import { Container, Card, DropdownContent, RadioContent, Condition, Buttons} from './style';
+import { Container, Card, DropdownContent, Id, RadioContent, Condition, Buttons} from './style';
 
 function ScheduleAppointment() {
   return (
@@ -17,12 +17,10 @@ function ScheduleAppointment() {
         </header>
 
         <DropdownContent>
-          <p>Selecione uma categoria:</p>
-          <Dropdown>
-            <option>Teste 1</option>
-            <option>Teste 2</option>
-            <option>Teste 3</option>
-          </Dropdown>
+          <p>Categoria:</p>
+          <Id>
+            <p>Consulta de rotina</p>
+          </Id>
 
           <p>Data para o atendimento:</p>
           <Dropdown>

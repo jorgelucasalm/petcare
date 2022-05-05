@@ -15,7 +15,8 @@ export const Container = styled.div`
 
 export const Card = styled.div`
   margin: 1rem 0;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   width: 100%;
   min-width: 323px;
@@ -79,7 +80,6 @@ export const DropdownContent = styled.div`
 
   max-width: 280px;
   min-width: 250px;
-  
 
   p {
     display: flex;
@@ -89,10 +89,32 @@ export const DropdownContent = styled.div`
     font-weight: 500;
     color: #7d7d7d;
 
-    padding: 1rem 0rem .5rem;
+    padding: 1rem 0rem 0.5rem;
   }
 `;
 
+export const Id = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #b4b4b4;
+  border-radius: 1rem;
+  max-width: 280px;
+  min-width: 250px;
+  padding: 0 1rem;
+  background-color: #fdfdfd;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+
+  p {
+    font-weight: 400;
+  }
+
+  &:hover {
+    background: #efefef;
+  }
+`;
 
 export const RadioContent = styled.div`
   width: 280px;
