@@ -1,10 +1,6 @@
 import SecundaryButton from '../../components/SecundaryButton';
 import PatientButton from './components/PatientButton';
 
-import Clock from '../../assets/img/clock.svg';
-import Check from '../../assets/img/check.svg';
-import Cancel from '../../assets/img/cancel.svg';
-
 import Dog from '../../assets/img/MicroIcon-dog.svg';
 import Cat from '../../assets/img/MicroIcon-cat.svg';
 
