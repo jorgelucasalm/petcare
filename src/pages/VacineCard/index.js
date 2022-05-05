@@ -50,6 +50,38 @@ function VacineCard() {
 
               <p>Vacina Lorem</p>
             </VacineButton>
+
+            <VacineButton color="clock">
+              <span>
+                <img src={Clock} />
+              </span>
+
+              <p>Vacina Lorem</p>
+            </VacineButton>
+
+            <VacineButton color="check">
+              <span>
+                <img src={Check} />
+              </span>
+
+              <p>Vacina Lorem</p>
+            </VacineButton>
+
+            <VacineButton color="cancel">
+              <span>
+                <img src={Cancel} />
+              </span>
+
+              <p>Vacina Lorem</p>
+            </VacineButton>
+
+            <VacineButton color="return">
+              <span>
+                <img src={Retorno} />
+              </span>
+
+              <p>Vacina Lorem</p>
+            </VacineButton>
           </Content>
 
           <Buttons>
