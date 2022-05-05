@@ -19,7 +19,7 @@ function Requisitions() {
           </header>
 
           <RequisitionContent>
-            <RequisitonButton color="clock">
+            <RequisitonButton color="clock" alt="icone-relógio">
               <span>
                 <img src={Clock} />
               </span>
@@ -29,7 +29,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="check">
+            <RequisitonButton color="check" alt="icone-check">
               <span>
                 <img src={Check} />
               </span>
@@ -39,7 +39,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="cancel">
+            <RequisitonButton color="cancel" alt="icone-cancelar">
               <span>
                 <img src={Cancel} />
               </span>
@@ -49,7 +49,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="return">
+            <RequisitonButton color="return" alt="icone-retorno">
               <span>
                 <img src={Retorno} />
               </span>
@@ -59,7 +59,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="clock">
+            <RequisitonButton color="clock" alt="icone-relógio">
               <span>
                 <img src={Clock} />
               </span>
@@ -69,7 +69,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="check">
+            <RequisitonButton color="check" alt="icone-check">
               <span>
                 <img src={Check} />
               </span>
@@ -79,7 +79,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="cancel">
+            <RequisitonButton color="cancel" alt="icone-cancelar">
               <span>
                 <img src={Cancel} />
               </span>
@@ -89,7 +89,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="return">
+            <RequisitonButton color="return" alt="icone-retorno">
               <span>
                 <img src={Retorno} />
               </span>
@@ -99,7 +99,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="clock">
+            <RequisitonButton color="clock" alt="icone-relógio">
               <span>
                 <img src={Clock} />
               </span>
@@ -109,7 +109,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="check">
+            <RequisitonButton color="check" alt="icone-check">
               <span>
                 <img src={Check} />
               </span>
@@ -119,7 +119,7 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="cancel">
+            <RequisitonButton color="cancel" alt="icone-cancelar">
               <span>
                 <img src={Cancel} />
               </span>
@@ -129,7 +129,47 @@ function Requisitions() {
               </div>
             </RequisitonButton>
 
-            <RequisitonButton color="return">
+            <RequisitonButton color="return" alt="icone-retorno">
+              <span>
+                <img src={Retorno} />
+              </span>
+              <div>
+                <p>Categoria</p>
+                <p>12/02</p>
+              </div>
+            </RequisitonButton>
+
+            <RequisitonButton color="clock" alt="icone-relógio">
+              <span>
+                <img src={Clock} />
+              </span>
+              <div>
+                <p>Categoria</p>
+                <p>12/02</p>
+              </div>
+            </RequisitonButton>
+
+            <RequisitonButton color="check" alt="icone-check">
+              <span>
+                <img src={Check} />
+              </span>
+              <div>
+                <p>Categoria</p>
+                <p>12/02</p>
+              </div>
+            </RequisitonButton>
+
+            <RequisitonButton color="cancel" alt="icone-cancelar">
+              <span>
+                <img src={Cancel} />
+              </span>
+              <div>
+                <p>Categoria</p>
+                <p>12/02</p>
+              </div>
+            </RequisitonButton>
+
+            <RequisitonButton color="return" alt="icone-retorno">
               <span>
                 <img src={Retorno} />
               </span>
