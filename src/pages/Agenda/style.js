@@ -28,10 +28,25 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: scroll;
   border-radius: 0.5rem;
   gap: 1rem;
   padding: 2rem 0rem;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 16px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 16px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(138, 195, 203, 0.56);
+    border-radius: 20px;
+    border: 3px solid #ffffff;
+  }
 
   header {
     display: flex;
