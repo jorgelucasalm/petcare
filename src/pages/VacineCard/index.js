@@ -19,7 +19,7 @@ function VacineCard() {
           </header>
 
           <Content>
-            <VacineButton color="clock">
+          <VacineButton color="clock" alt="icone-relógio">
               <span>
                 <img src={Clock} />
               </span>
@@ -27,7 +27,7 @@ function VacineCard() {
               <p>Vacina Lorem</p>
             </VacineButton>
 
-            <VacineButton color="check">
+            <VacineButton color="check" alt="icone-check">
               <span>
                 <img src={Check} />
               </span>
@@ -37,13 +37,13 @@ function VacineCard() {
 
             <VacineButton color="cancel">
               <span>
-                <img src={Cancel} />
+                <img src={Cancel} alt="icone-cancelar"/>
               </span>
 
               <p>Vacina Lorem</p>
             </VacineButton>
 
-            <VacineButton color="return">
+            <VacineButton color="return" alt="icone-retorno">
               <span>
                 <img src={Retorno} />
               </span>
@@ -51,7 +51,7 @@ function VacineCard() {
               <p>Vacina Lorem</p>
             </VacineButton>
 
-            <VacineButton color="clock">
+            <VacineButton color="clock" alt="icone-relógio">
               <span>
                 <img src={Clock} />
               </span>
@@ -59,7 +59,7 @@ function VacineCard() {
               <p>Vacina Lorem</p>
             </VacineButton>
 
-            <VacineButton color="check">
+            <VacineButton color="check" alt="icone-check">
               <span>
                 <img src={Check} />
               </span>
@@ -69,13 +69,13 @@ function VacineCard() {
 
             <VacineButton color="cancel">
               <span>
-                <img src={Cancel} />
+                <img src={Cancel} alt="icone-cancelar"/>
               </span>
 
               <p>Vacina Lorem</p>
             </VacineButton>
 
-            <VacineButton color="return">
+            <VacineButton color="return" alt="icone-retorno">
               <span>
                 <img src={Retorno} />
               </span>
