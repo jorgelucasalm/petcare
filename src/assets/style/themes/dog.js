@@ -1,5 +1,5 @@
 import User from "../../img/icon-user-dog.png"
-import Dog from "../../img/icon-saudacoes-dog.png"
+import Dog from "../../img/icon-home-dog.png"
 
 export default {
   title: 'dog',
@@ -7,7 +7,7 @@ export default {
   colors: {
     primary: '#6dbf8e',
     secundary: '',
-    background: '#bed9dd',
+    background: '#D0E6A5',
   },
 
   images: {
