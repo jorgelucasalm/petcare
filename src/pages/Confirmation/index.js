@@ -1,54 +1,51 @@
-import PrimaryButton from "../../components/PrimaryButton"
-import SecondaryButton from "../../components/SecundaryButton"
-import { Navbar } from "../Login/style";
-import Footer from "../../components/Footer";
-import { Container} from "./style";
+import PrimaryButton from '../../components/PrimaryButton';
+import SecondaryButton from '../../components/SecundaryButton';
+import Item from './components/Item';
+import { Container, Card } from './style';
 
-function Categories(){
-    return(
-        <>  
-            <Navbar></Navbar>
-            <Container>
-                <header>
-                    <h1>Confirmação</h1>
-                    <t>Revise seus dados com atenção</t>
-                </header>
-                <div>
-                    <item>
-                        <p>Nº de identificação:</p>
-                        <h2>123.456-00</h2>  
-                    </item>       
-                    <item>
-                        <p>Requisição:</p>
-                        <h2>CONSULTA</h2>  
-                    </item>   
-                    <item>
-                        <p>Data selecionada:</p>
-                        <h2>12/01 - MANHÃ</h2>  
-                    </item>  
-                    <item>
-                        <p>Tratamento?</p>
-                        <h2>NÃO</h2>  
-                    </item>  
-                    <item>
-                        <p>Médico desejado:</p>
-                        <h2>DRA. CAMILA GONÇALVEZ</h2>  
-                    </item>  
-                    <item>
-                        <p>Autoriza realocação de horários?</p>
-                        <h2>NÃO</h2>  
-                    </item>       
-                    <item>
-                        <p>Descrição:</p>
-                        <h2>LOREM IPSUM DOLOR</h2>  
-                    </item>
-                </div>                
-                <PrimaryButton>Confirmar</PrimaryButton>
-                <SecondaryButton>Voltar</SecondaryButton>      
-            </Container>
-            <Footer></Footer>
-        </>
-    );
+function Categories() {
+  return (
+    <Container>
+      <Card>
+        <header>
+          <h2>Confirmação</h2>
+          <p>Revise seus dados com atenção</p>
+        </header>
+        <div>
+          <Item>
+            <h3>Nº de identificação:</h3>
+            <p>123.456-00</p>
+          </Item>
+          <Item>
+            <h3>Requisição:</h3>
+            <p>CONSULTA</p>
+          </Item>
+          <Item>
+            <h3>Data selecionada:</h3>
+            <p>12/01 - MANHÃ</p>
+          </Item>
+          <Item>
+            <h3>Tratamento?</h3>
+            <p>NÃO</p>
+          </Item>
+          <Item>
+            <h3>Médico desejado:</h3>
+            <p>DRA. CAMILA GONÇALVEZ</p>
+          </Item>
+          <Item>
+            <h3>Autoriza realocação de horários?</h3>
+            <p>NÃO</p>
+          </Item>
+          <Item>
+            <h3>Descrição:</h3>
+            <p>LOREM IPSUM DOLOR</p>
+          </Item>
+        </div>
+        <PrimaryButton>Confirmar</PrimaryButton>
+        <SecondaryButton>Voltar</SecondaryButton>
+      </Card>
+    </Container>
+  );
 }
 
 export default Categories;

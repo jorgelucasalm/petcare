@@ -1,4 +1,5 @@
 import Cadastro from "./pages/Cadastro";
+import Confirmation from "./pages/Confirmation";
 
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     //<Login />
     //<Cadastro />
     
-    <Cadastro />
+    <Confirmation />
   );
 }
 
