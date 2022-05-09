@@ -1,15 +1,11 @@
 import Login from "./pages/Login";
-import NotFound from "./pages/NotFound";
+import R from "./pages/Requisitions";
+import ScheduleAppointment from "./pages/ScheduleAppointment";
 import Cadastro from "./pages/Cadastro";
-import Requisitions from "./pages/Requisitions";
-//import Guidelines from "./pages/Guidelines";
-
 function App() {
   return (
     //<Login />
-    //<Cadastro />
-    //<Categories />
-    <Requisitions/>
+    <R />
   );
 }
 
