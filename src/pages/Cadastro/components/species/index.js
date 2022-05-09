@@ -17,10 +17,9 @@ import {
 
 function Modal({ showModal, closeModal, onSubmit }, props) {
   const [specie, setSpecie] = useState('')
-  const [showModalPacient, setShowModalPacient] = useState(false);
 
   const validationSelected = () => {
-    specie !== '' && onSubmit(specie)
+    specie !== '' && onSubmit("pet", specie)
   }
 
   return (

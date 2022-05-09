@@ -9,17 +9,16 @@ import { useForm } from 'react-hook-form';
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 
-
 import ModalSpecies from './components/species'
 import ModalConfirmation from './components/confirmation'
 import ModalAccess from './components/access'
 import ModalPatient from './components/patient'
 
-
 function Cadastro() {
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
-  const [userRegister, setUserRegister] = useState([]);
+  const [userRegister, setUserRegister] = useState({});
+  const [animal, setAnimal] = useState('');
 
   const schema = yup.object().shape({
     name: yup.string().max(40, "Seu nome não pode ser tão grande!").required('Campo obrigatório'),
@@ -34,23 +33,58 @@ function Cadastro() {
   });
 
   const onSubmit = (dados) => {
-    setUserRegister(dados)
+    setUserRegister({
+      ...userRegister,
+      user: {
+        adress: dados.adress,
+        cpf: dados.cpf,
+        email: dados.email,
+        name: dados.name,
+        phone: dados.phone
+      },
+    })
     setIndex(index === 0 ? 1 : index)
     handleModal()
-    console.log(index, showModal)
   }
 
-  const handleModal = (data) => {
+  const handleModal = () => {
     setShowModal(!showModal);
   }
 
-  const saveData = (e) => {
+  const saveData = (title, dados) => {
+    if (title === "pet")
+      setAnimal(dados)
+    if (title === "pet-dados")
+      setUserRegister({
+        ...userRegister,
+        pet: {
+          animal: animal,
+          nome_p: dados.nome_p,
+          idade_p: dados.idade_p,
+          peso_p: dados.peso_p,
+          raca_p: dados.raca_p,
+          tpSang_p: dados.pSang_p
+
+        },
+      })
+    if (title === "login")
+      setUserRegister({
+        ...userRegister,
+        login: {
+          user: dados.user,
+          email: userRegister.user.email,
+          password: dados.password,
+        },
+      })
+
     setIndex(index + 1)
-    console.log(e)
   }
 
   const backModal = () => {
     setIndex(index - 1)
+  }
+  const teste = () => {
+    console.log(userRegister)
   }
 
   return (
@@ -91,7 +125,7 @@ function Cadastro() {
         <ModalSpecies showModal={showModal && index === 1} closeModal={handleModal} onSubmit={saveData} />
         <ModalPatient showModal={showModal && index === 2} closeModal={handleModal} onSubmit={saveData} back={backModal} />
         <ModalAccess showModal={showModal && index === 3} closeModal={handleModal} onSubmit={saveData} back={backModal} />
-        <ModalConfirmation showModal={showModal && index === 4} closeModal={handleModal} onSubmit={saveData} back={backModal} />
+        <ModalConfirmation showModal={showModal && index === 4} closeModal={handleModal} onSubmit={teste} back={backModal} />
 
       </Container>
       <Footer />

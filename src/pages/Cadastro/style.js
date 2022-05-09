@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Navbar = styled.nav`
   display: none;
-  height: 4rem;
+  height: 3rem;
   background-color: #bed9dd;
 
   @media (min-width: 700px) {

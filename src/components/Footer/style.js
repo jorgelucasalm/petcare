@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-const PrimaryFooter = styled.footer`
-    position: relative;
-    bottom: 0;
+
+const PrimaryFooter = styled.footer`    
     z-index: 0;
     display: flex;
+    position: absolute;
+    bottom: 0;
     align-items: center;
     justify-content: center;
     width: 100%;

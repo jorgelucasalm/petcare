@@ -7,7 +7,7 @@ import ProgressBar from '../../../../components/ProgressBar';
 
 import { Container, Card, TextBox, Selector, Buttons } from './style';
 
-function Confirmation({ showModal, closeModal }, props) {
+function Confirmation({ showModal, closeModal, onSubmit }, props) {
   return (
     <>
       {showModal ? (
@@ -34,7 +34,7 @@ function Confirmation({ showModal, closeModal }, props) {
             </TextBox>
 
             <Buttons>
-              <PrimaryButton>Tela inicial</PrimaryButton>
+              <PrimaryButton onClick={onSubmit}>Tela inicial</PrimaryButton>
             </Buttons>
           </Card>
         </Container>

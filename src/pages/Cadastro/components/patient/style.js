@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -60,11 +60,29 @@ export const Card = styled.div`
     }
 `;
 
-export const TextBox = styled.div `
+export const TextBox = styled.form`
     display: flex;
     flex-direction: column;
     padding: 1rem; 
     width: fit-content;
+
+    select,input {
+      height: 2rem;
+      font-weight: 600;
+      margin: 0.5rem 1rem;
+      width: 95%;
+      max-width: 20rem;
+      min-width: 15rem;
+      border: none;
+      border-bottom: 2px solid #bed9dd;
+      outline: none;
+    }
+
+    span {
+      color: red;
+      font-size: .7rem;
+      margin-left: 1rem;
+    }
 `;
 
 export const Buttons = styled.div`

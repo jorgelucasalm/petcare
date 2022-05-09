@@ -1,0 +1,23 @@
+{
+  "user": {
+    "adress": "10ª Travessa Tejipió",
+    "cpf": "11185851437",
+    "email": "j.joginho@gmail.com",
+    "name": "Jorge Lucas de Amorim Lopes de Morais",
+    "phone": "81993602159"
+  },
+
+  "pet": {
+    "animal": "",
+    "nome_p": "1",
+    "raca_p": "123",
+    "idade_p": "123",
+    "peso_p": "123",
+    "tpSang_p": "a-p"
+  },
+
+  "login": {
+    "username": "",
+    "password": ""
+  }
+}
