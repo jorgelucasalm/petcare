@@ -13,7 +13,7 @@ export const Container = styled.div`
     justify-content: center;
     width: 7rem;
     height: 7rem;
-    background-color: #F9FCF3;
+    background-color: ${(props) => props.theme.colors.background};
 
     border-radius: 10px;
     box-shadow: 0 5px 10px -2px #b2b2b2;
@@ -31,7 +31,7 @@ export const Container = styled.div`
     font-weight: 600;
   }
   div:hover {
-   background-color: #f2f9e5;
+   background-color: ${(props) => props.theme.colors.buttonBackground};
    transition: all 0.3s ease-out;
  }  
 

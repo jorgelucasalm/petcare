@@ -5,7 +5,7 @@ export const Container = styled.nav`
   height: 4rem;
   box-shadow: 0 5px 10px -2px #b2b2b2;
 
-  background-color: ${(props) => props.theme.colors.background};
+  background-color: ${(props) => props.theme.colors.navbar};
       
   span,
   img {

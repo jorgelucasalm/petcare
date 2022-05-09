@@ -6,7 +6,9 @@ export default {
 
   colors: {
     primary: '#9960AE',
-    background: '#CCABD8',
+    navbar: '#CCABD8',
+    background: '#ece2f1',
+    buttonBackground: '#CCABD8',
   },
 
   images: {
