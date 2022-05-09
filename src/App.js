@@ -1,14 +1,11 @@
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
-import Requisitions from "./pages/Requisitions";
-import Agenda from "./pages/Agenda";
-
+import ScheduleAppointment from "./pages/ScheduleAppointment";
+import Cadastro from "./pages/Cadastro";
 function App() {
   return (
     //<Login />
-    //<Categories />
-    //<Requisitions/>
-    <Agenda />
+    <Cadastro />
   );
 }
 
