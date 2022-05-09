@@ -1,18 +1,11 @@
-//import Logo from "../../assets/img/logo-petcare.png" 
-// import Cat from "../../assets/img/welcome.png"
+import Logo from "../../assets/img/logo-petcare.png" 
+import Cat from "../../assets/img/welcome-cat.png"
 import PrimaryButton from "../../components/PrimaryButton";
 import SecundaryButton from "../../components/SecundaryButton";
 import Input from "../../components/Input";
+import Footer from "../../components/Footer";
 
-import {
-  Navbar,
-  Container,
-  BlueSection,
-  WhiteSection,
-  TextBox,
-  Buttons,
-  Footer
-} from "./style"
+import { Navbar, Container, BlueSection, WhiteSection, TextBox, Buttons } from "./style"
 
 function Login() {
   return (
@@ -22,8 +15,8 @@ function Login() {
 
         <BlueSection>
           <p>Bem vindo ao</p>
-          <img />
-          <img />
+          <img src={ Logo } alt="logo-petcare"/>
+          <img src={ Cat } alt="mascote-felino"/>
         </BlueSection>
 
         <WhiteSection>
@@ -44,7 +37,7 @@ function Login() {
         </WhiteSection>
       </Container>
 
-      <Footer>&copy; Coc</Footer>
+      <Footer />
     </>
   );
 }
