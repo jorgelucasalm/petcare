@@ -26,17 +26,17 @@ const Button = styled.button`
 
   &:hover {
     background: ${(props) => {
-      switch (props.color) {
-        case 'dog':
-          return 'linear-gradient(180deg, #D0E6A5 0%, #DDEDBD 100%);';
+    switch (props.color) {
+      case 'dog':
+        return 'linear-gradient(180deg, #D0E6A5 0%, #DDEDBD 100%);';
 
-        case 'cat':
-          return 'linear-gradient(180deg, #CCABD8 0%, #DBC4E3 100%);';
+      case 'cat':
+        return 'linear-gradient(180deg, #CCABD8 0%, #DBC4E3 100%);';
 
-        default:
-          return '#1DA6BA';
-      }
-    }};
+      default:
+        return '#1DA6BA';
+    }
+  }};
   }
 `;
 export default Button;

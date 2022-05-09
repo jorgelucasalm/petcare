@@ -1,13 +1,11 @@
+import Login from "./pages/Login";
+import NotFound from "./pages/NotFound";
+import ScheduleAppointment from "./pages/ScheduleAppointment";
 import Cadastro from "./pages/Cadastro";
-import Confirmation from "./pages/Confirmation";
-
 function App() {
   return (
-    <>
-      <Cadastro />
-      {/* <Confirmation /> */}
-    </>
-
+    //<Login />
+    <Cadastro />
   );
 }
 
