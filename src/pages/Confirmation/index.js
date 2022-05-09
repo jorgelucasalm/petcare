@@ -3,7 +3,7 @@ import SecondaryButton from '../../components/SecundaryButton';
 import Item from './components/Item';
 import { Container, Card } from './style';
 
-function Categories() {
+function Confirmation() {
   return (
     <Container>
       <Card>
@@ -48,4 +48,4 @@ function Categories() {
   );
 }
 
-export default Categories;
+export default Confirmation;
