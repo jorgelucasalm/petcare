@@ -55,6 +55,7 @@ export const Card = styled.div`
 
     gap: 0.5rem;
     padding: 1rem;
+    padding-bottom: 0;
 
     h2 {
       font-size: 1.2rem;
