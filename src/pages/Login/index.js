@@ -12,7 +12,6 @@ function Login() {
     <>
       <Navbar></Navbar>
       <Container>
-
         <BlueSection>
           <p>Bem vindo ao</p>
           <img src={ Logo } alt="logo-petcare"/>

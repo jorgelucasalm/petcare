@@ -15,7 +15,7 @@ const Button = styled.button`
   border: none;
   transition: all 0.3s ease-out;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
 
   background: ${(props) => {
     switch (props.color) {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import SelectButton from "../../../../components/SelectButton";
+import SelectButton from "./components/SelectButton";
 import { Container, Card } from "./style";
 import VaccineSchedule from './components/VaccineSchedule'
 

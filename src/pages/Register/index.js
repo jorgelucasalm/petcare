@@ -14,7 +14,7 @@ import ModalConfirmation from './components/confirmation'
 import ModalAccess from './components/access'
 import ModalPatient from './components/patient'
 
-function Cadastro() {
+function Register() {
   const [showModal, setShowModal] = useState(false);
   const [index, setIndex] = useState(0);
   const [userRegister, setUserRegister] = useState({});
@@ -133,4 +133,4 @@ function Cadastro() {
   );
 }
 
-export default Cadastro;
+export default Register;

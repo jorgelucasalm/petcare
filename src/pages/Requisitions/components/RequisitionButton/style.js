@@ -17,7 +17,7 @@ const Button = styled.button`
   transition: all 0.3s ease-out;
   background: #fdfdfd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
 
   div {
     display: flex;
@@ -36,7 +36,7 @@ const Button = styled.button`
     color: #858585;
     background: #efefef;
   }
-  
+
   img {
     width: 60%;
   }

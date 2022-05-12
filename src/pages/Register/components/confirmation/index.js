@@ -3,7 +3,7 @@ import CatIcon from '../../../../assets/img/icon-home-cat.png';
 
 //import InfoBox from '../../../../components/InfoBox';
 import PrimaryButton from '../../../../components/PrimaryButton';
-import ProgressBar from '../../../../components/ProgressBar';
+import ProgressBar from '../ProgressBar';
 
 import { Container, Card, TextBox, Selector, Buttons } from './style';
 

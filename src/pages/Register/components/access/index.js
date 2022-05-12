@@ -1,7 +1,7 @@
 import Input from '../../../../components/Input/style';
 import PrimaryButton from '../../../../components/PrimaryButton';
 import SecundaryButton from '../../../../components/SecundaryButton';
-import ProgressBar from '../../../../components/ProgressBar';
+import ProgressBar from '../ProgressBar';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'

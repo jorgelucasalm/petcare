@@ -1,6 +1,6 @@
 import Input from '../../../../components/Input';
 import PrimaryButton from '../../../../components/PrimaryButton';
-import ProgressBar from '../../../../components/ProgressBar';
+import ProgressBar from '../ProgressBar';
 import SecundaryButton from '../../../../components/SecundaryButton';
 import { Container, Card, TextBox, Buttons } from './style';
 import * as yup from 'yup'
