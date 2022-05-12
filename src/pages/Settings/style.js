@@ -3,34 +3,35 @@ import Pata from '../../assets/img/background-paws.svg';
 import Pata2 from '../../assets/img/background-paws2.svg';
 
 export const Container = styled.div`
+  position: fixed;
   display: flex;
-  padding: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(${Pata}) left repeat-y, url(${Pata2}) right repeat-y;
-  height: 100vh;
-  background-color: #3c3c3c99;
 
-  @media (max-width: 700px) {
-    overflow: auto;
-    background-repeat: no-repeat;
-  }
+  background-color: #3c3c3c99;
+  padding: 0rem;
+  margin: 0;
+  inset: 0;
+  z-index: 9999;
+
+  background: url(${Pata}) left repeat-y, url(${Pata2}) right repeat-y;
+  background-color: #3c3c3c99;
 `;
 
 export const Card = styled.div`
   width: 100%;
   min-width: 300px;
-  max-width: 700px;
-  max-height: 650px;
+  max-width: 600px;
+  max-height: 700px;
 
   background-color: #ffffff;
   color: #074b55;
   display: flex;
   flex-direction: column;
   align-items: center;
-overflow-x: hidden;
-overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   border-radius: 0.5rem;
   gap: 1rem;
   padding: 2rem 0rem;
@@ -73,12 +74,12 @@ overflow-y: scroll;
   }
 `;
 
-export const RequisitionContent = styled.div`
+export const ConfigContent = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
   width: 700px;
 
   @media (max-width: 700px) {

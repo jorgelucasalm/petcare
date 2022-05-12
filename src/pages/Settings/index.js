@@ -8,7 +8,7 @@ import Check from '../../assets/img/check.svg';
 import Retorno from '../../assets/img/retorno.svg';
 import Cancel from '../../assets/img/cancel.svg';
 
-import { Container, Card, RequisitionContent, Buttons } from './style';
+import { Container, Card, ConfigContent, Buttons } from './style';
 
 
 function Settings() {
@@ -21,13 +21,31 @@ function Settings() {
           <p>(Marlena Ferreira)</p>
         </header>
 
-        <RequisitionContent>
+        <ConfigContent>
           <ConfigButton>
-            <div>
-              <p>Responsável</p>
-            </div>
+              <p>Paciente</p>
           </ConfigButton>
-        </RequisitionContent>
+
+          <ConfigButton>
+              <p>Responsável</p>
+          </ConfigButton>
+
+          <ConfigButton>
+              <p>Senha</p>
+          </ConfigButton>
+
+          <ConfigButton>
+              <p>Faq</p>
+          </ConfigButton>
+
+          <ConfigButton>
+              <p>Lorem Ipsum</p>
+          </ConfigButton>
+
+          <ConfigButton>
+              <p>Log Off</p>
+          </ConfigButton>
+        </ConfigContent>
 
         <Buttons>
           <SecundaryButton>Voltar</SecundaryButton>

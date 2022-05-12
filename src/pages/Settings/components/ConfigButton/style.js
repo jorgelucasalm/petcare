@@ -12,7 +12,7 @@ const Button = styled.button`
   width: 100%;
   max-width: 280px;
 
-  padding: 1rem 0.8rem;
+  padding: 1.2rem 0.8rem;
   border: none;
   transition: all 0.3s ease-out;
   background: #fdfdfd;
@@ -21,8 +21,7 @@ const Button = styled.button`
 
   div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
   }
 
   p {
