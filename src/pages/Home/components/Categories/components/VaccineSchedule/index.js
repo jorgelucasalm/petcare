@@ -12,7 +12,7 @@ import {
   Buttons,
 } from './style';
 
-function ScheduleAppointment({ showModal, setShowModal }) {
+function VaccineSchedule({ showModal, setShowModal }) {
   const closeModal = () => {
     setShowModal(false)
   }
@@ -83,4 +83,4 @@ function ScheduleAppointment({ showModal, setShowModal }) {
   );
 }
 
-export default ScheduleAppointment;
+export default VaccineSchedule;

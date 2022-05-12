@@ -1,6 +1,6 @@
-import PrimaryButton from '../../../../components/PrimaryButton';
-import SecundaryButton from '../../../../components/SecundaryButton';
-import Dropdown from '../../../../components/Dropdown';
+import PrimaryButton from '../../../../../../components/PrimaryButton';
+import SecundaryButton from '../../../../../../components/SecundaryButton';
+import Dropdown from '../../../../../../components/Dropdown';
 
 import {
   Container,
