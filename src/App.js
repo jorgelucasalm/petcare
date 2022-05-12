@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import dog from "./assets/style/themes/dog";
 import cat from "./assets/style/themes/cat";
 import { useState } from "react";
+import Settings from "./pages/Settings";
 
 function App() {
   const [theme, setTheme] = useState(dog)
@@ -15,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar changeTheme={handleTheme} />
-      <Home />
+      <Settings />
     </ThemeProvider>
   );
 }

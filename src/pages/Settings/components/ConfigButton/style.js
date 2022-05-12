@@ -36,36 +36,7 @@ const Button = styled.button`
     color: #858585;
     background: #efefef;
   }
-  
-  img {
-    width: 60%;
-  }
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 1.2rem;
-    min-height: 1.2rem;
-    border-radius: 50%;
-    background: ${(props) => {
-      switch (props.color) {
-        case 'clock':
-          return '#E0C274';
 
-        case 'return':
-          return '#8BBFDC';
-
-        case 'check':
-          return '#8AD9A9';
-
-        case 'cancel':
-          return '#fa897b';
-
-        default:
-          return '#1DA6BA';
-      }
-    }};
-  }
   @media (max-width: 700px) {
     min-width: 280px;
   }

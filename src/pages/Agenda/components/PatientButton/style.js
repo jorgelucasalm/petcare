@@ -37,7 +37,7 @@ export const PatientButton = styled.button`
   }
 
   &:hover {
-    color: #3c3c3c;
+    color: #858585;
     background: #efefef;
 
     img {
