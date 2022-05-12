@@ -4,8 +4,8 @@ const Button = styled.button`
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-decoration: none;
   text-align: left;
   width: 100%;
