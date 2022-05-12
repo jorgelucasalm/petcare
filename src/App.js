@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Configurar from "./pages/Configurar";
 
 import dog from "./assets/style/themes/dog";
 import cat from "./assets/style/themes/cat";
@@ -16,7 +17,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar changeTheme={handleTheme} />
-      <Home />
+      {/* <Home /> */}
+      <Configurar/>
     </ThemeProvider>
   );
 }
