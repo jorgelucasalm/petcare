@@ -18,49 +18,17 @@ function VacineCard() {
         </header>
 
         <Content>
-          <VacineButton color="clock" alt="icone-relógio">
+          <VacineButton color="clock" >
             <span>
-              <img src={Clock} />
+              <img src={Clock} alt="icone-relógio"/>
             </span>
 
             <p>Vacina Lorem</p>
           </VacineButton>
 
-          <VacineButton color="check" alt="icone-check">
+          <VacineButton color="check" >
             <span>
-              <img src={Check} />
-            </span>
-
-            <p>Vacina Lorem</p>
-          </VacineButton>
-
-          <VacineButton color="cancel">
-            <span>
-              <img src={Cancel} alt="icone-cancelar" />
-            </span>
-
-            <p>Vacina Lorem</p>
-          </VacineButton>
-
-          <VacineButton color="return" alt="icone-retorno">
-            <span>
-              <img src={Retorno} />
-            </span>
-
-            <p>Vacina Lorem</p>
-          </VacineButton>
-
-          <VacineButton color="clock" alt="icone-relógio">
-            <span>
-              <img src={Clock} />
-            </span>
-
-            <p>Vacina Lorem</p>
-          </VacineButton>
-
-          <VacineButton color="check" alt="icone-check">
-            <span>
-              <img src={Check} />
+              <img src={Check} alt="icone-check"/>
             </span>
 
             <p>Vacina Lorem</p>
@@ -74,9 +42,41 @@ function VacineCard() {
             <p>Vacina Lorem</p>
           </VacineButton>
 
-          <VacineButton color="return" alt="icone-retorno">
+          <VacineButton color="return" >
             <span>
-              <img src={Retorno} />
+              <img src={Retorno} alt="icone-retorno"/>
+            </span>
+
+            <p>Vacina Lorem</p>
+          </VacineButton>
+
+          <VacineButton color="clock" >
+            <span>
+              <img src={Clock} alt="icone-relógio"/>
+            </span>
+
+            <p>Vacina Lorem</p>
+          </VacineButton>
+
+          <VacineButton color="check" >
+            <span>
+              <img src={Check} alt="icone-check"/>
+            </span>
+
+            <p>Vacina Lorem</p>
+          </VacineButton>
+
+          <VacineButton color="cancel">
+            <span>
+              <img src={Cancel} alt="icone-cancelar" />
+            </span>
+
+            <p>Vacina Lorem</p>
+          </VacineButton>
+
+          <VacineButton color="return" >
+            <span>
+              <img src={Retorno} alt="icone-retorno"/>
             </span>
 
             <p>Vacina Lorem</p>
