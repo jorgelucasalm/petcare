@@ -6,7 +6,6 @@ const Button = styled.button`
   align-items: center;
   font-size: 0.7rem;
   font-weight: 600;
-  color: #909090;
   text-decoration: none;
   text-align: left;
   width: 100%;
@@ -15,9 +14,28 @@ const Button = styled.button`
   padding: 1.2rem 0.8rem;
   border: none;
   transition: all 0.3s ease-out;
-  background: #fdfdfd;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+
+  background: ${(props) => {
+    switch (props.color) {
+      case 'alert':
+        return '#FFF1F1';
+
+      default:
+        return '#fdfdfd';
+    }
+  }};
+
+  color: ${(props) => {
+    switch (props.color) {
+      case 'alert':
+        return '#FA897B';
+
+      default:
+        return '#909090';
+    }
+  }};
 
   div {
     display: flex;
@@ -32,8 +50,25 @@ const Button = styled.button`
   }
 
   &:hover {
-    color: #858585;
-    background: #efefef;
+    background: ${(props) => {
+    switch (props.color) {
+      case 'alert':
+        return '#FFE5E5';
+
+      default:
+        return '#efefef';
+    }
+  }};
+
+  color: ${(props) => { 
+    switch (props.color) {
+      case 'alert':
+        return '#FA897B';
+
+      default:
+        return '#858585';
+    }
+  }};
   }
 
   @media (max-width: 700px) {

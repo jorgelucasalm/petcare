@@ -42,7 +42,7 @@ function Settings() {
               <p>Lorem Ipsum</p>
           </ConfigButton>
 
-          <ConfigButton>
+          <ConfigButton color='alert'>
               <p>Log Off</p>
           </ConfigButton>
         </ConfigContent>
