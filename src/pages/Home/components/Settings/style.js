@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Pata from '../../assets/img/background-paws.svg';
-import Pata2 from '../../assets/img/background-paws2.svg';
+import Pata from '../../../../assets/img/background-paws.svg';
+import Pata2 from '../../../../assets/img/background-paws2.svg';
 
 export const Container = styled.div`
   position: fixed;

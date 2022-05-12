@@ -1,13 +1,7 @@
 import ConfigButton from './components/ConfigButton';
-import Perfil from '../../assets/img/icon-home-dog.png';
+import Perfil from '../../../../assets/img/icon-home-dog.png';
 
-import SecundaryButton from '../../components/SecundaryButton';
-
-import Clock from '../../assets/img/clock.svg';
-import Check from '../../assets/img/check.svg';
-import Retorno from '../../assets/img/retorno.svg';
-import Cancel from '../../assets/img/cancel.svg';
-
+import SecundaryButton from '../../../../components/SecundaryButton';
 import { Container, Card, ConfigContent, Buttons } from './style';
 
 
