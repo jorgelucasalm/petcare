@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import Pata from '../../assets/img/background-paws.svg';
-import Pata2 from '../../assets/img/background-paws2.svg';
+import Pata from '../../../../assets/img/background-paws.svg';
+import Pata2 from '../../../../assets/img/background-paws2.svg';
 
 export const Container = styled.div`
+position: fixed;
   display: flex;
   padding: 2rem;
   flex-direction: column;
@@ -11,6 +12,8 @@ export const Container = styled.div`
   background: url(${Pata}) left repeat-y, url(${Pata2}) right repeat-y;
   height: 100vh;
   background-color: #3c3c3c99;
+  inset: 0;
+  z-index: 9999;
 
   @media (max-width: 700px) {
     overflow: auto;
@@ -29,8 +32,8 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-overflow-x: hidden;
-overflow-y: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   border-radius: 0.5rem;
   gap: 1rem;
   padding: 2rem 0rem;

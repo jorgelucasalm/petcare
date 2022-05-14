@@ -9,6 +9,7 @@ import Register from './pages/Register'
 import dog from "./assets/style/themes/dog";
 import cat from "./assets/style/themes/cat";
 import { useState } from "react";
+import Routes from './routes/routes'
 
 function App() {
   const [theme, setTheme] = useState(dog)
@@ -20,7 +21,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar changeTheme={handleTheme} />
-      <Register />
+      <Routes />
     </ThemeProvider>
   );
 }

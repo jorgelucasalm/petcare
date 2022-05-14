@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Logo from '../../assets/img/logo-petcare.png';
 import Dog from '../../assets/img/welcome-dog.png';
@@ -13,6 +13,7 @@ import ModalSpecies from './components/species'
 import ModalConfirmation from './components/confirmation'
 import ModalAccess from './components/access'
 import ModalPatient from './components/patient'
+import { createUser } from '../../service/serviceUser';
 
 function Cadastro() {
   const [showModal, setShowModal] = useState(false);
@@ -51,6 +52,36 @@ function Cadastro() {
     setShowModal(!showModal);
   }
 
+  useEffect(() => {
+    if (userRegister.login) {
+      console.log(userRegister)
+      const dados = userRegister;
+
+      const user = {
+        nome: dados.user.name,
+        nick: dados.login.user,
+        cpf: dados.user.cpf,
+        endereco: dados.user.adress,
+        telefone: dados.user.phone,
+        email: dados.user.email,
+        senha: dados.login.password,
+        email_recuperacao: dados.user.email
+      }
+
+      const pet = {
+        id: "default",
+        cpf_responsavel: dados.user.cpf,
+        nome: dados.pet.nome,
+        raca: dados.pet.raca,
+        animal: dados.pet.animal,
+        peso: dados.pet.peso,
+        idade: dados.pet.idade,
+        tipo_sanguineo: dados.pet.tipo_sanguineo
+      }
+      createUser(user, pet)
+    }
+  }, [userRegister])
+
   const saveData = (title, dados) => {
     if (title === "pet")
       setAnimal(dados)
@@ -82,9 +113,6 @@ function Cadastro() {
 
   const backModal = () => {
     setIndex(index - 1)
-  }
-  const teste = () => {
-    console.log(userRegister)
   }
 
   return (
