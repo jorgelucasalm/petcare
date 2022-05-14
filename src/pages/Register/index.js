@@ -59,12 +59,12 @@ function Cadastro() {
         ...userRegister,
         pet: {
           animal: animal,
-          nome_p: dados.nome_p,
-          idade_p: dados.idade_p,
-          peso_p: dados.peso_p,
-          raca_p: dados.raca_p,
-          tpSang_p: dados.pSang_p
-
+          nome: dados.nome_p,
+          idade: dados.idade_p,
+          peso: dados.peso_p,
+          raca: dados.raca_p,
+          tipo_sanguineo: dados.pSang_p,
+          cpfResponsavel: userRegister.user.cpf
         },
       })
     if (title === "login")
@@ -89,7 +89,6 @@ function Cadastro() {
 
   return (
     <>
-      <Navbar />
       <Container>
         <WhiteSection onSubmit={handleSubmit(onSubmit)}>
           <header>
@@ -125,7 +124,7 @@ function Cadastro() {
         <ModalSpecies showModal={showModal && index === 1} closeModal={handleModal} onSubmit={saveData} />
         <ModalPatient showModal={showModal && index === 2} closeModal={handleModal} onSubmit={saveData} back={backModal} />
         <ModalAccess showModal={showModal && index === 3} closeModal={handleModal} onSubmit={saveData} back={backModal} />
-        <ModalConfirmation showModal={showModal && index === 4} closeModal={handleModal} onSubmit={teste} back={backModal} />
+        <ModalConfirmation showModal={showModal && index === 4} closeModal={handleModal} dados={userRegister} back={backModal} />
 
       </Container>
       <Footer />

@@ -47,6 +47,7 @@ export const Container = styled.div`
 `;
 
 export const BlueSection = styled.div`
+  z-index: -1;
   display: none;
 
   @media (min-width: 700px) {
