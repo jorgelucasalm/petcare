@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import ExamSchedule from './pages/Categories/components/ExamSchedule'
+import Register from './pages/Register'
 // import ScheduleAppointment from './pages/Categories/components/AppointmentSchedule'
 //import Configurar from "./pages/Configurar";
 
@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar changeTheme={handleTheme} />
-      <ExamSchedule />
+      <Register />
     </ThemeProvider>
   );
 }
