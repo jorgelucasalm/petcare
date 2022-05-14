@@ -20,16 +20,15 @@ const Button = styled.button`
   border-radius: 8px;
 
   div {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
 
   p {
     font-weight: 600;
     font-size: 0.8rem;
-
-    margin-right: 8rem;
   }
 
   &:hover {
@@ -47,23 +46,23 @@ const Button = styled.button`
     min-height: 1.2rem;
     border-radius: 50%;
     background: ${(props) => {
-      switch (props.color) {
-        case 'clock':
-          return '#E0C274';
+    switch (props.color) {
+      case 'clock':
+        return '#E0C274';
 
-        case 'return':
-          return '#8BBFDC';
+      case 'return':
+        return '#8BBFDC';
 
-        case 'check':
-          return '#8AD9A9';
+      case 'check':
+        return '#8AD9A9';
 
-        case 'cancel':
-          return '#fa897b';
+      case 'cancel':
+        return '#fa897b';
 
-        default:
-          return '#1DA6BA';
-      }
-    }};
+      default:
+        return '#1DA6BA';
+    }
+  }};
   }
   @media (max-width: 700px) {
     min-width: 280px;

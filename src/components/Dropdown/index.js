@@ -1,7 +1,7 @@
 import { DropdownContainer } from './style';
 
-function Dropdown({ children }) {
-  return <DropdownContainer> {children} </DropdownContainer>;
+function Dropdown({ children, onChange }) {
+  return <DropdownContainer onChange={onChange}> {children} </DropdownContainer>;
 }
 
 export default Dropdown;

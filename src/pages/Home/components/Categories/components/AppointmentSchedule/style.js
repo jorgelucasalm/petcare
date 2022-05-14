@@ -81,6 +81,12 @@ export const DropdownContent = styled.div`
 
   max-width: 280px;
   min-width: 250px;
+  
+  input[type="date"]{
+    padding: .5rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #9d9d9d;
+  }
 
   p {
     display: flex;
