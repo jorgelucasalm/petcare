@@ -12,6 +12,7 @@ import { Container, Hub } from './style'
 import { ThemeContext } from 'styled-components'
 import Categories from './components/Categories'
 import Requisitions from './components/Requisitions'
+import A from './components/Categories/components/ModalOk'
 import { useEffect } from 'react';
 import { listarAgenda } from '../../service/serviceAgendamento'
 
@@ -42,7 +43,7 @@ function Home() {
         <Card tittle={"Cartão de vacina"} image={Vacina}></Card>
         <Card tittle={"Exames"} image={Exame}></Card>
         <Card tittle={"Configuração"} image={Config}></Card>
-        <Card tittle={"FAQ"} image={Faq}></Card>
+        <Card tittle={"FAQ"} image={Faq} ></Card>
       </Hub>
       <Footer></Footer>
       <Categories showModal={showAgendar} setShowModal={setShowAgendar} />

@@ -4,17 +4,20 @@ import Dropdown from '../../../../../../components/Dropdown';
 import { createAgendamento } from '../../../../../../service/serviceAgendamento';
 import { Container, Card, DropdownContent, Id, RadioContent, Condition, Buttons } from './style';
 import { useRef, useState } from 'react';
+import ModalOk from '../ModalOk';
 
 function AppointmentSchedule({ showModal, setShowModal }) {
   const checked = useRef(null)
 
-  const [categoria, setCategoria] = useState('Categoria de rotina')
+  const [categoria, setCategoria] = useState('Rotina')
   const [date, setData] = useState('')
   const [horario, setHorario] = useState('09:00')
   const [tratamentoC, setTratamentoC] = useState(false)
   const [medico, setMedico] = useState('Jorge Lucas')
+  const [modalOk, setModalOk] = useState(false)
 
   const validation = () => {
+
     const autorizacao = checked.current.checked
 
     if (categoria !== '' && date !== '' && horario !== '' && tratamentoC !== '' && medico !== '') {
@@ -35,8 +38,13 @@ function AppointmentSchedule({ showModal, setShowModal }) {
         tipo_exame: '',
       }
       createAgendamento(data)
+      setShowModal(false)
+      setModalOk(true)
     }
   }
+
+
+
   return (<>
     {showModal && <Container className="modal"
       onClick={e => { e.target.className.includes('modal') && setShowModal(false) }}>
@@ -57,17 +65,6 @@ function AppointmentSchedule({ showModal, setShowModal }) {
 
           <p>Data para o atendimento:</p>
           <input onChange={(e) => { setData(e.target.value) }} id="date" type="date" name="stockDate" min={new Date().getFullYear() + '-' + String(new Date().getMonth() + 1).padStart(2, '0') + '-' + new Date().getDate()} ></input>
-          {/* <Dropdown>
-            <option>11</option>
-            <option>Teste 2</option>
-            <option>Teste 3</option>
-            <option>Teste 1</option>
-            <option>Teste 2</option>
-            <option>Teste 3</option>
-            <option>Teste 1</option>
-            <option>Teste 2</option>
-            <option>Teste 3</option>
-          </Dropdown> */}
 
           <p>Horário para o atendimento:</p>
           <Dropdown onChange={(e) => { setHorario(e.target.value) }}>
@@ -128,6 +125,8 @@ function AppointmentSchedule({ showModal, setShowModal }) {
         </Buttons>
       </Card>
     </Container>}
+
+    <ModalOk showModal={modalOk} setShowModal={setModalOk} />
   </>
   );
 }

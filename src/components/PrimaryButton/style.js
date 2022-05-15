@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
+  cursor: pointer;
   font-size: 0.8rem;
   font-weight: 600;
   color: #ffffff;
