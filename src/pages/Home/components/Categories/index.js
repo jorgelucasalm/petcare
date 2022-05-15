@@ -9,11 +9,13 @@ function Categories({ showModal, setShowModal }) {
   const [showAppointment, setShowAppointment] = useState(false)
 
   const openModalVacine = () => {
+    setShowModal(false)
     setShowVacine(true)
   }
 
   const openModalAppointment = () => {
-    setShowAppointment(true)
+    setShowModal(false)
+    setShowAppointment(true,)
   }
   return (
     <>
@@ -32,9 +34,9 @@ function Categories({ showModal, setShowModal }) {
             <SelectButton>Exames</SelectButton>
           </div>
         </Card>
-        <VaccineSchedule showModal={showVacine} setShowModal={setShowVacine}></VaccineSchedule>
-        <ScheduleAppointment showModal={showAppointment} setShowModal={setShowAppointment}></ScheduleAppointment>
       </Container>}
+      <VaccineSchedule showModal={showVacine} setShowModal={setShowVacine}></VaccineSchedule>
+      <ScheduleAppointment showModal={showAppointment} setShowModal={setShowAppointment}></ScheduleAppointment>
     </>
   );
 }
