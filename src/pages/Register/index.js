@@ -79,6 +79,8 @@ function Cadastro() {
         tipo_sanguineo: dados.pet.tipo_sanguineo
       }
       createUser(user, pet)
+      localStorage.setItem("userData", JSON.stringify(userRegister));
+
     }
   }, [userRegister])
 

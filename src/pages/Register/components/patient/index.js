@@ -10,8 +10,8 @@ import { useForm } from 'react-hook-form';
 function Patient({ showModal, closeModal, back, onSubmit }) {
 
   const schema = yup.object().shape({
-    nome_p: yup.string().matches(/^[a-zA-Z]+$/, "Este campo deve possuir apenas letras!").max(40, "Seu nome não pode ser tão grande!").required('Campo obrigatório'),
-    raca_p: yup.string().matches(/^[a-zA-Z]+$/, "Este campo deve possuir apenas letras!").max(40, "A raça não pode ser tão grande!").required('Campo obrigatório'),
+    nome_p: yup.string().matches(/^[a-záàâãéèêíïóôõöúçñ ]+$/i, "Este campo deve possuir apenas letras!").max(40, "Seu nome não pode ser tão grande!").required('Campo obrigatório'),
+    raca_p: yup.string().matches(/^[a-záàâãéèêíïóôõöúçñ ]+$/i, "Este campo deve possuir apenas letras!").max(40, "A raça não pode ser tão grande!").required('Campo obrigatório'),
     peso_p: yup.string().min(1, 'Digite um valor valido!').required('Campo obrigatório'),
     idade_p: yup.string().min(1, 'Digite uma idade valida!').required('Campo obrigatório'),
     tpSang_p: yup.string().required('Campo obrigatório')
