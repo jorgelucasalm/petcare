@@ -22,6 +22,8 @@ function Home() {
   const [dados, setDados] = useState([])
   const { images } = useContext(ThemeContext)
 
+  const data = JSON.parse(localStorage.getItem("userData"));
+
   const openModal = (e) => {
     if (e === "agendar") {
       setShowAgendar(true)
@@ -36,7 +38,7 @@ function Home() {
 
   return (
     <Container>
-      <TopSection image={images.pet} />
+      <TopSection image={images.pet} data={data} />
       <Hub>
         <Card tittle={"Agendar"} image={Agendar} onClick={() => openModal("agendar")}></Card>
         <Card tittle={"Requisições"} image={Requisicao} onClick={() => openModal("requisicao")}></Card>
