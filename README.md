@@ -38,4 +38,6 @@ Repositório para desenvolver o sistema de agendamento de uma clínica veterinar
 
 - [@JessyLeal](https://github.com/JessyLeal) <br>
 - [@dEgito](https://github.com/dEgito) <br>
+- [@Diegod064](https://github.com/Diegod064) <br>
+- [@guilhermeee87](https://github.com/guilhermeee87) <br>
 - [@jorgelucasalm](https://github.com/jorgelucasalm)
