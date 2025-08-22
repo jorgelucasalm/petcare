@@ -16,7 +16,7 @@ Repositório para desenvolver o sistema de agendamento de uma clínica veterinar
 
 ## Video de Apresentação
 
-[Clique Aqui!](https://drive.google.com/file/d/1NjBrR3WApTlhcbZVyBjYY4BCcRZ3FRl9/view?usp=sharing)
+https://github.com/user-attachments/assets/bf1a0d74-f708-4176-bac2-1cd5b0e45ab9
 
 ---
 
